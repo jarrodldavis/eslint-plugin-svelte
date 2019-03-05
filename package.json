@@ -23,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/jarrodldavis/eslint-plugin-svelte/issues"
   },
-  "homepage": "https://github.com/jarrodldavis/eslint-plugin-svelte#readme"
+  "homepage": "https://github.com/jarrodldavis/eslint-plugin-svelte#readme",
+  "peerDependencies": {
+    "eslint": "^5.0.0",
+    "svelte": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.0",
+    "svelte": "^3.0.0-beta.10"
+  }
 }
