@@ -1,0 +1,39 @@
+{
+  "root": true,
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:all",
+    "plugin:node/recommended",
+    "plugin:eslint-comments/recommended",
+    "plugin:eslint-plugin/all",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["eslint-plugin"],
+  "rules": {
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "camelcase": "off",
+    "one-var": ["error", "never"],
+    "func-style": ["error", "declaration"],
+    "capitalized-comments": "off",
+    "multiline-comment-style": "off",
+    "sort-keys": "off",
+    "line-comment-position": "off",
+    "no-inline-comments": "off",
+    "no-magic-numbers": ["error", { "ignore": [-1, 0, 1, 2] }],
+    "max-params": ["error", 4],
+    "node/exports-style": ["error", "module.exports"],
+    "node/prefer-global/buffer": "error",
+    "node/prefer-global/console": "error",
+    "node/prefer-global/process": "error",
+    "node/prefer-global/text-decoder": "error",
+    "node/prefer-global/text-encoder": "error",
+    "node/prefer-global/url-search-params": "error",
+    "node/prefer-global/url": "error",
+    "eslint-comments/no-unused-disable": "error",
+    "eslint-comments/disable-enable-pair": ["error", { "allowWholeFile": true }]
+  }
+}
