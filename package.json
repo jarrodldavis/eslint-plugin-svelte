@@ -4,6 +4,7 @@
   "description": "Experimental ESLint parser and plugin for Svelte v3 templates",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
