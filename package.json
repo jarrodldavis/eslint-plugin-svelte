@@ -29,8 +29,8 @@
     "svelte": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "^5.15.0",
-    "svelte": "^3.0.0-beta.10"
+    "eslint": "^5.15.1",
+    "svelte": "^3.0.0-beta.11"
   },
   "dependencies": {
     "eslint-rule-composer": "^0.3.0",
