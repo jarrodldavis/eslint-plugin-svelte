@@ -5,7 +5,7 @@
     "es6": true,
     "node": true
   },
-  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "extends": ["eslint:all", "plugin:prettier/recommended"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -14,6 +14,16 @@
     "ecmaVersion": 2018
   },
   "rules": {
-    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "camelcase": "off",
+    "one-var": ["error", "never"],
+    "func-style": ["error", "declaration"],
+    "capitalized-comments": "off",
+    "multiline-comment-style": "off",
+    "sort-keys": "off",
+    "line-comment-position": "off",
+    "no-inline-comments": "off",
+    "no-magic-numbers": ["error", { "ignore": [-1, 0, 1, 2] }],
+    "max-params": ["error", 4]
   }
 }
