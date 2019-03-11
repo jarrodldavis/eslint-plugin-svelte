@@ -27,6 +27,8 @@
     "max-params": ["error", 4],
     "no-continue": "off",
     "no-ternary": "off",
+    "class-methods-use-this": "off",
+    "no-underscore-dangle": "off",
     "node/exports-style": ["error", "module.exports"],
     "node/prefer-global/buffer": "error",
     "node/prefer-global/console": "error",
