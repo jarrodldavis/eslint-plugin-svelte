@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "description": "Experimental ESLint parser and plugin for Svelte v3 templates",
   "main": "index.js",
+  "files": [
+    "./README.md",
+    "./LICENSE",
+    "./index.js",
+    "./lib/"
+  ],
   "scripts": {
     "lint": "eslint .",
     "prettier": "prettier '**' --check",
