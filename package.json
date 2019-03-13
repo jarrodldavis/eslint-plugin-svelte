@@ -49,6 +49,7 @@
     "eslint-scope": "^4.0.2",
     "eslint-visitor-keys": "^1.0.0",
     "espree": "^5.0.1",
+    "esquery": "^1.0.1",
     "estraverse": "^4.2.0"
   }
 }
