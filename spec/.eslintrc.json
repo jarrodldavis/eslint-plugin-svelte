@@ -1,0 +1,14 @@
+{
+  "root": false,
+  "env": {
+    "jasmine": true
+  },
+  "extends": "plugin:jasmine/recommended",
+  "plugins": ["jasmine"],
+  "rules": {
+    "jasmine/missing-expect": "error",
+    "jasmine/named-spy": "warn",
+    "jasmine/no-assign-spyon": "warn",
+    "jasmine/no-describe-variables": "warn"
+  }
+}

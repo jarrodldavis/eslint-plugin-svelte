@@ -3,10 +3,16 @@
   "version": "0.0.1",
   "description": "Experimental ESLint parser and plugin for Svelte v3 templates",
   "main": "index.js",
+  "files": [
+    "./README.md",
+    "./LICENSE",
+    "./index.js",
+    "./lib/"
+  ],
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint ./index.js ./lib/",
     "prettier": "prettier '**' --check",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -39,12 +45,16 @@
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-eslint-comments": "^3.1.1",
     "eslint-plugin-eslint-plugin": "^2.0.1",
+    "eslint-plugin-jasmine": "^2.10.1",
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-prettier": "^3.0.1",
+    "fast-check": "^1.12.0",
+    "jasmine": "^3.3.1",
     "prettier": "^1.16.4",
     "svelte": "^3.0.0-beta.11"
   },
   "dependencies": {
+    "acorn": "^6.1.1",
     "eslint-rule-composer": "^0.3.0",
     "eslint-scope": "^4.0.2",
     "eslint-visitor-keys": "^1.0.0",
