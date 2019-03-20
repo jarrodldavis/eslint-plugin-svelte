@@ -29,6 +29,7 @@
     "no-ternary": "off",
     "class-methods-use-this": "off",
     "no-underscore-dangle": "off",
+    "max-lines": ["error", 500],
     "node/exports-style": ["error", "module.exports"],
     "node/prefer-global/buffer": "error",
     "node/prefer-global/console": "error",
