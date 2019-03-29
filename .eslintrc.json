@@ -31,7 +31,6 @@
     "no-underscore-dangle": "off",
     "max-statements": ["error", 15],
     "no-undefined": "off",
-    "max-lines": ["error", 400],
     "node/exports-style": ["error", "module.exports"],
     "node/prefer-global/buffer": "error",
     "node/prefer-global/console": "error",
