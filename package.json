@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint .",
     "prettier": "prettier '**' --check",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "patch-package"
   },
   "repository": {
     "type": "git",
@@ -58,6 +59,7 @@
     "espree": "^5.0.1",
     "esquery": "^1.0.1",
     "estraverse": "^4.2.0",
+    "patch-package": "^6.1.0",
     "prettier": "^1.16.4",
     "svelte": "^3.0.0-beta.22",
     "typescript": "^3.4.1"

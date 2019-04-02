@@ -1,0 +1,20 @@
+diff --git a/node_modules/@types/eslint-scope/index.d.ts b/node_modules/@types/eslint-scope/index.d.ts
+index 11faf0b..5cfa2f4 100644
+--- a/node_modules/@types/eslint-scope/index.d.ts
++++ b/node_modules/@types/eslint-scope/index.d.ts
+@@ -9,6 +9,7 @@ import * as estree from "estree";
+ export const version: string;
+ 
+ export class ScopeManager implements eslint.Scope.ScopeManager {
++    constructor(options: AnalysisOptions)
+     scopes: Scope[];
+     globalScope: Scope;
+     acquire(node: {}, inner?: boolean): Scope | null;
+@@ -30,6 +31,7 @@ export class Scope implements eslint.Scope.Scope {
+ }
+ 
+ export class Variable implements eslint.Scope.Variable {
++    constructor(name: string, scope: Scope)
+     name: string;
+     identifiers: estree.Identifier[];
+     references: Reference[];

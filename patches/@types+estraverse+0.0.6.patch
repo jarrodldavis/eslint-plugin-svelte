@@ -1,0 +1,21 @@
+diff --git a/node_modules/@types/estraverse/index.d.ts b/node_modules/@types/estraverse/index.d.ts
+index 2acce2b..919b2b6 100644
+--- a/node_modules/@types/estraverse/index.d.ts
++++ b/node_modules/@types/estraverse/index.d.ts
+@@ -4,6 +4,7 @@
+ // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+ 
+ import * as ESTree from 'estree';
++import { VisitorKeys } from "eslint-visitor-keys";
+ 
+ export interface Visitor {
+     enter?: (node: ESTree.Node, parentNode: ESTree.Node | null) => VisitorOption | ESTree.Node | void;
+@@ -11,7 +12,7 @@ export interface Visitor {
+ 
+     fallback?: 'iteration'|((node: ESTree.Node) => string[]);
+ 
+-    keys?: {[nodeType: string]: string[];};
++    keys?: VisitorKeys;
+ }
+ 
+ export enum VisitorOption {Skip, Break, Remove}
