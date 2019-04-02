@@ -38,4 +38,4 @@ const configs = {
   }
 };
 
-module.exports = { configs };
+export { configs };

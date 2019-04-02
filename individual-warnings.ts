@@ -21,8 +21,8 @@ function postprocess(problems) {
   return problems[0];
 }
 
-module.exports = {
-  processors: {
-    ".svelte": { preprocess, postprocess }
-  }
+const processors = {
+  ".svelte": { preprocess, postprocess }
 };
+
+export { processors };

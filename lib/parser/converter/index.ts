@@ -1,6 +1,6 @@
 "use strict";
 
-const { Converter } = require("./converter");
+import { Converter } from "./converter";
 
 function convert(code, options, ast) {
   const ast_clone = JSON.parse(JSON.stringify(ast));
@@ -12,4 +12,4 @@ function convert(code, options, ast) {
   return JSON.parse(JSON.stringify(ast_clone));
 }
 
-module.exports = { convert };
+export { convert };

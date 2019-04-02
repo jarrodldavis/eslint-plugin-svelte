@@ -1,7 +1,7 @@
 // eslint-disable-next-line max-classes-per-file
 "use strict";
 
-const { getLineInfo } = require("acorn");
+import { getLineInfo } from "acorn";
 
 const POSITION_APPLIED = Symbol("eslint-plugin-svelte error position marker");
 
@@ -44,7 +44,7 @@ class NodeSyntaxError extends SyntaxError {
   }
 }
 
-module.exports = {
+export {
   POSITION_APPLIED,
   LexerTokenSyntaxError,
   apply_node_position,

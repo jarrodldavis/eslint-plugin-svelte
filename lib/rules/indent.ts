@@ -1,7 +1,7 @@
 "use strict";
 
-const { Linter } = require("eslint");
-const composer = require("eslint-rule-composer");
+import { Linter } from "eslint";
+import composer from "eslint-rule-composer";
 
 const base_rule = new Linter().getRules().get("indent");
 
@@ -53,4 +53,4 @@ const filter = composer.filterReports(map, ({ data }) => {
   return actual !== expected;
 });
 
-module.exports = filter;
+export default filter;

@@ -1,15 +1,15 @@
 "use strict";
 
-const { VisitorOption } = require("estraverse");
+import { VisitorOption } from "estraverse";
 
-const { NodeSyntaxError } = require("../errors");
+import { NodeSyntaxError } from "../errors";
 
-const { BaseVisitor } = require("./base-visitor");
-const { mix } = require("./helpers/mixin-builder");
-const { ExpressionParserMixin } = require("./expression-parser");
-const { ScriptBlockParserMixin } = require("./script-block-parser");
-const { PositionUpdaterMixin } = require("./position-updater");
-const { TagTokenizerMixin } = require("./tag-tokenizer");
+import { BaseVisitor } from "./base-visitor";
+import { mix } from "./helpers/mixin-builder";
+import { ExpressionParserMixin } from "./expression-parser";
+import { ScriptBlockParserMixin } from "./script-block-parser";
+import { PositionUpdaterMixin } from "./position-updater";
+import { TagTokenizerMixin } from "./tag-tokenizer";
 
 const MixedInVisitor = mix(BaseVisitor).with(
   ExpressionParserMixin,
@@ -120,4 +120,4 @@ class Converter extends MixedInVisitor {
   }
 }
 
-module.exports = { Converter };
+export { Converter };

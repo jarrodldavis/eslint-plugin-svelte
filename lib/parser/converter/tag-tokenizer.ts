@@ -1,16 +1,16 @@
 "use strict";
 
-const { VisitorOption } = require("estraverse");
+import { VisitorOption } from "estraverse";
 
-const { LexerTokenSyntaxError, NodeSyntaxError } = require("../errors");
+import { LexerTokenSyntaxError, NodeSyntaxError } from "../errors";
 
-const { template_lexer } = require("./helpers/template-lexer");
+import { template_lexer } from "./helpers/template-lexer";
 
-const {
+import {
   LEXER_TOKEN_TYPES,
   ESPREE_TOKEN_TYPES,
   TOKEN_MAPPINGS
-} = require("./helpers/token-mappings");
+} from "./helpers/token-mappings";
 
 const IMPORTED_COMPONENT_REFERENCE = "InlineComponent[name=/^[A-Z]/]";
 
@@ -247,4 +247,4 @@ function TagTokenizerMixin(SuperClass) {
   };
 }
 
-module.exports = { TagTokenizerMixin };
+export { TagTokenizerMixin };

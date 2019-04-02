@@ -1,6 +1,6 @@
 "use strict";
 
-const { getLineInfo } = require("acorn");
+import { getLineInfo } from "acorn";
 
 const CODE = Symbol("PositionUpdater.code");
 const SET_LOCATION = Symbol("PositionUpdater.set_location()");
@@ -60,4 +60,4 @@ function PositionUpdaterMixin(SuperClass) {
   };
 }
 
-module.exports = { PositionUpdaterMixin };
+export { PositionUpdaterMixin };

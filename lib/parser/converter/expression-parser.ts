@@ -1,9 +1,9 @@
 "use strict";
 
-const { NodeSyntaxError } = require("../errors");
+import { NodeSyntaxError } from "../errors";
 
-const { parseExpressionAt } = require("./helpers/espree");
-const { EXPRESSION_NODES } = require("../keys");
+import { parseExpressionAt } from "./helpers/espree";
+import { EXPRESSION_NODES } from "../keys";
 
 const CODE = Symbol("ExpressionParser.code");
 const PARSER_OPTIONS = Symbol("ExpressionParser.parser_options");
@@ -97,4 +97,4 @@ function ExpressionParserMixin(SuperClass) {
   };
 }
 
-module.exports = { ExpressionParserMixin };
+export { ExpressionParserMixin };

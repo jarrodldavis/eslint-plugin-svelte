@@ -1,11 +1,7 @@
 "use strict";
 
-const { parse } = require("./lib/parser");
-const { rules } = require("./lib/rules");
-const { configs } = require("./lib/configs");
+import { parse } from "./lib/parser";
+import { rules } from "./lib/rules";
+import { configs } from "./lib/configs";
 
-module.exports = {
-  parseForESLint: parse,
-  rules,
-  configs
-};
+export { parse as parseForESLint, rules, configs };

@@ -1,10 +1,10 @@
 "use strict";
 
-const { compile } = require("svelte/compiler");
+import { compile } from "svelte/compiler";
 
-const { convert } = require("./converter");
-const { analyze } = require("./referencer");
-const { ALL_SVELTE_KEYS } = require("./keys");
+import { convert } from "./converter";
+import { analyze } from "./referencer";
+import { ALL_SVELTE_KEYS } from "./keys";
 
 function compile_template(code) {
   try {
@@ -52,4 +52,4 @@ function parse(code, options) {
   };
 }
 
-module.exports = { parse };
+export { parse };

@@ -1,12 +1,12 @@
 /* eslint-disable new-cap */
 "use strict";
 
-const { NodeSyntaxError } = require("../errors");
+import { NodeSyntaxError } from "../errors";
 
-const { Variable, Reference } = require("eslint-scope");
-const Referencer = require("eslint-scope/lib/referencer");
-const { Definition } = require("eslint-scope/lib/definition");
-const { BlockScope } = require("eslint-scope/lib/scope");
+import { Variable, Reference } from "eslint-scope";
+import Referencer from "eslint-scope/lib/referencer";
+import { Definition } from "eslint-scope/lib/definition";
+import { BlockScope } from "eslint-scope/lib/scope";
 
 class SvelteReferencer extends Referencer {
   visitTemplateDeclaration(node, parent) {
@@ -158,4 +158,4 @@ class SvelteReferencer extends Referencer {
   }
 }
 
-module.exports = { SvelteReferencer };
+export { SvelteReferencer };

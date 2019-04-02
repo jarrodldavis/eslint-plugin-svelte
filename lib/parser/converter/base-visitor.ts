@@ -1,10 +1,10 @@
 "use strict";
 
-const { replace, VisitorOption } = require("estraverse");
-const { matches, parse: parse_query } = require("esquery");
+import { replace, VisitorOption } from "estraverse";
+import { matches, parse as parse_query } from "esquery";
 
-const { ALL_SVELTE_KEYS } = require("../keys");
-const { POSITION_APPLIED, apply_node_position } = require("../errors");
+import { ALL_SVELTE_KEYS } from "../keys";
+import { POSITION_APPLIED, apply_node_position } from "../errors";
 
 const ANCESTRY = Symbol("BaseVisitor.ancestry");
 const HANDLERS = Symbol("BaseVisitor.handlers");
@@ -154,4 +154,4 @@ class BaseVisitor {
   }
 }
 
-module.exports = { BaseVisitor };
+export { BaseVisitor };

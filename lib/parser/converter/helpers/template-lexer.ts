@@ -1,9 +1,9 @@
 /* eslint-disable max-lines, require-unicode-regexp */
 "use strict";
 
-const moo = require("moo");
+import moo from "moo";
 
-const { LEXER_TOKEN_TYPES: TOKENS } = require("./token-mappings");
+import { LEXER_TOKEN_TYPES as TOKENS } from "./token-mappings";
 
 const template_lexer = moo.states({
   $all: { error: moo.error },
@@ -422,4 +422,4 @@ const template_lexer = moo.states({
   }
 });
 
-module.exports = { template_lexer };
+export { template_lexer };

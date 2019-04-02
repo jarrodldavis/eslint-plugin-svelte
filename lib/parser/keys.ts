@@ -1,5 +1,5 @@
 "use strict";
-const base_javascript_keys = require("eslint-visitor-keys");
+import base_javascript_keys from "eslint-visitor-keys";
 
 const EXPRESSION_KEY = "expression";
 const CHILDREN_KEY = "children";
@@ -98,4 +98,4 @@ const ALL_TEMPLATE_KEYS = {
 
 const ALL_SVELTE_KEYS = base_javascript_keys.unionWith(ALL_TEMPLATE_KEYS);
 
-module.exports = { BASE_SVELTE_KEYS, ALL_SVELTE_KEYS, EXPRESSION_NODES };
+export { BASE_SVELTE_KEYS, ALL_SVELTE_KEYS, EXPRESSION_NODES };

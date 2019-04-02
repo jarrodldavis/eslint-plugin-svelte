@@ -1,6 +1,6 @@
 "use strict";
 
-const { get_parser } = require("./helpers/espree");
+import { get_parser } from "./helpers/espree";
 
 const CODE = Symbol("ScriptBlockParser.code");
 const PARSER_OPTIONS = Symbol("ScriptBlockParser.parser_options");
@@ -31,4 +31,4 @@ function ScriptBlockParserMixin(SuperClass) {
   };
 }
 
-module.exports = { ScriptBlockParserMixin };
+export { ScriptBlockParserMixin };

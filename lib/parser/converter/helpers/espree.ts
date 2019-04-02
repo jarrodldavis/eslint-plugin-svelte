@@ -1,7 +1,7 @@
 "use strict";
 
-const acorn = require("acorn");
-const espree = require("espree/lib/espree");
+import acorn from "acorn";
+import espree from "espree/lib/espree";
 
 function svelte(position) {
   return function extend(Parser) {
@@ -63,4 +63,4 @@ function parseExpressionAt(code, base_options, start, end, assignable) {
   return { expression, tokens, comments };
 }
 
-module.exports = { get_parser, parseExpressionAt };
+export { get_parser, parseExpressionAt };

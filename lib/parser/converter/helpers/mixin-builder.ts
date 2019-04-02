@@ -18,4 +18,4 @@ function mix(superclass) {
   return new MixinBuilder(superclass);
 }
 
-module.exports = { mix };
+export { mix };

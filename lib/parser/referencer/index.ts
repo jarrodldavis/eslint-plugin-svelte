@@ -1,9 +1,9 @@
 "use strict";
 
-const { ScopeManager } = require("eslint-scope");
-const { BASE_SVELTE_KEYS } = require("../keys");
-const { SvelteReferencer } = require("./referencer");
-const { handle_compiler_variable } = require("./injected");
+import { ScopeManager } from "eslint-scope";
+import { BASE_SVELTE_KEYS } from "../keys";
+import { SvelteReferencer } from "./referencer";
+import { handle_compiler_variable } from "./injected";
 
 // https://github.com/eslint/eslint-scope/blob/14c092a6efd4dd0bf701bf4f8f518eac6b29b2ce/lib/index.js#L61-L76
 function default_options() {
@@ -41,4 +41,4 @@ function analyze(ast, providedOptions, compiler_variables) {
   return manager;
 }
 
-module.exports = { analyze };
+export { analyze };

@@ -20,7 +20,7 @@
  */
 "use strict";
 
-const { Variable: ScopeVariable } = require("eslint-scope");
+import { Variable as ScopeVariable } from "eslint-scope";
 
 /**
  * Retrieves the top-level variable with the given name.
@@ -141,4 +141,4 @@ function handle_compiler_variable(global_scope, compiler_variable) {
   }
 }
 
-module.exports = { handle_compiler_variable };
+export { handle_compiler_variable };
