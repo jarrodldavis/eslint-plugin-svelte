@@ -4,12 +4,13 @@
 const fs = require("fs");
 const path = require("path");
 
-const TEMPLATE_DIR = path.join(__dirname, "../", "templates/");
+const TEMPLATE_ROOT = path.join(__dirname, "../", "templates/");
 const FILES_TO_SKIP = [".eslintrc.json"];
-const NAME_REGEX = /^\d\d\.(?<name>[a-z-[\]]+)(?:\.svelte)?$/u;
+const FILE_REGEX = /^\d\d\.(?<name>[a-z-[\]]+)\.svelte$/u;
+const DIRECTORY_REGEX = /^\d\d\.(?<name>[a-z-[\]]+)$/u;
 
-function get_name(entry, full_path) {
-  const match = entry.name.match(NAME_REGEX);
+function get_name(entry, full_path, regex) {
+  const match = entry.name.match(regex);
 
   if (!match) {
     throw new Error(`Unexpected name '${entry.name}' for entry '${full_path}'`);
@@ -30,7 +31,7 @@ function* get_entries(directory) {
 
     if (entry.isDirectory()) {
       yield Object.freeze({
-        name: get_name(entry, full_path),
+        name: get_name(entry, full_path, DIRECTORY_REGEX),
         full_path,
         directory: true,
         entries: Object.freeze(Array.from(get_entries(full_path)))
@@ -41,7 +42,7 @@ function* get_entries(directory) {
       }
 
       yield Object.freeze({
-        name: get_name(entry, full_path),
+        name: get_name(entry, full_path, FILE_REGEX),
         full_path,
         directory: false,
         contents: fs.readFileSync(full_path, { encoding: "utf-8" })
@@ -53,5 +54,6 @@ function* get_entries(directory) {
 }
 
 module.exports = {
-  templates: Object.freeze(Array.from(get_entries(TEMPLATE_DIR)))
+  TEMPLATE_ROOT,
+  templates: Object.freeze(Array.from(get_entries(TEMPLATE_ROOT)))
 };
