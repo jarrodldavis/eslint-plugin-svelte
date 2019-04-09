@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "plugins": ["@jarrodldavis/svelte"],
+  "extends": ["plugin:@jarrodldavis/svelte/eslint:all"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "@jarrodldavis/svelte/indent": ["error", 2],
+    "@jarrodldavis/svelte/compiler-warnings": "warn"
+  }
+}
