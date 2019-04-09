@@ -3,6 +3,13 @@
   "version": "0.0.1",
   "description": "Experimental ESLint parser and plugin for Svelte v3 templates",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "individual-warnings.js",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "prepare": "run-s prepare:*",
     "prepare:link-global": "npm link --ignore-scripts",
