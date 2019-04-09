@@ -1,0 +1,8 @@
+{
+  "check-leaks": true,
+  "forbid-only": true,
+  "forbid-pending": true,
+  "recursive": true,
+  "spec": "test/**/*.spec.js",
+  "ui": "tdd"
+}
