@@ -20,7 +20,7 @@ class RecursiveDirectoryReader {
         throw error;
       }
 
-      return [];
+      return null;
     }
   }
 

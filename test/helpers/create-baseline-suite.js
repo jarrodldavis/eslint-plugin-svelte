@@ -2,65 +2,64 @@
 "use strict";
 
 const fs = require("fs");
+const { EOL } = require("os");
 const path = require("path");
 
-const expect = require("unexpected");
+const unexpected = require("unexpected");
+const { unexpected_baseline_suite } = require("./baseline-suite-assertions");
 
-const { TEMPLATE_ROOT, templates } = require("./load-templates");
+const {
+  load_baselines,
+  NAME,
+  IS_DIRECTORY,
+  TEMPLATE_PATH,
+  TEMPLATE_CONTENTS,
+  BASELINE_PATH,
+  BASELINE_CONTENTS
+} = require("./load-baselines");
+
+const expect = unexpected.clone().use(unexpected_baseline_suite);
 
 const UPDATE_BASELINES = Boolean(process.env.UPDATE_BASELINES);
 const BASELINE_ROOT = path.join(__dirname, "../", "baselines/");
 
 class BaselineSuite {
-  constructor(root_name, get_result) {
-    this.root_name = root_name;
-    this.baseline_directory = path.join(BASELINE_ROOT, root_name);
-    this.get_result = get_result;
+  constructor(name, get_result) {
+    this.name = name;
+    this.get_result = entry => JSON.parse(JSON.stringify(get_result(entry)));
+    this.directory = path.join(BASELINE_ROOT, name, "/");
+    this.to_add = [];
+    this.to_update = [];
+    this.to_delete = [];
+    this.up_to_date = [];
   }
 
   create() {
-    this._define_suite({
-      name: this.root_name,
-      full_path: TEMPLATE_ROOT,
-      directory: true,
-      entries: templates
+    suite(this.name, () => {
+      this._define_suite(load_baselines(this.name));
+
+      suiteTeardown(() => this._update_snapshots());
     });
   }
 
-  _baseline_path(template_path) {
-    return path.join(
-      this.baseline_directory,
-      template_path.replace(TEMPLATE_ROOT, "")
-    );
+  _define_suite(entry) {
+    suite(entry[NAME], () => this._suite_callback(entry));
   }
 
-  _get_baseline(template_path) {
-    const baseline_path = `${this._baseline_path(template_path)}.json`;
-
-    try {
-      return JSON.parse(fs.readFileSync(baseline_path, { encoding: "utf-8" }));
-    } catch (error) {
-      if (error.code !== "ENOENT") {
-        throw error;
-      }
-      throw new Error(`Baseline has not yet been saved: ${baseline_path}`);
+  _suite_callback(entry) {
+    if (entry[TEMPLATE_CONTENTS] === undefined) {
+      suiteTeardown(() =>
+        this.to_delete.push({
+          path: entry[BASELINE_PATH],
+          contents: IS_DIRECTORY
+        })
+      );
+    } else if (entry[BASELINE_CONTENTS] === undefined) {
+      this.to_add.push({ path: entry[BASELINE_PATH], contents: IS_DIRECTORY });
     }
-  }
 
-  _save_baseline(template_path, contents) {
-    const baseline_path = `${this._baseline_path(template_path)}.json`;
-    fs.writeFileSync(baseline_path, JSON.stringify(contents));
-  }
-
-  _define_suite(template_entry) {
-    suite(template_entry.name, () => this._suite_callback(template_entry));
-  }
-
-  _suite_callback(template_entry) {
-    suiteSetup(() => this._suite_setup(template_entry.full_path));
-
-    for (const sub_entry of template_entry.entries) {
-      if (sub_entry.directory) {
+    for (const sub_entry of Object.values(entry)) {
+      if (sub_entry[IS_DIRECTORY]) {
         this._define_suite(sub_entry);
       } else {
         this._define_test(sub_entry);
@@ -68,38 +67,101 @@ class BaselineSuite {
     }
   }
 
-  _suite_setup(template_path) {
-    if (!UPDATE_BASELINES) {
+  _define_test(entry) {
+    test(entry[NAME], () => this._test_callback(entry));
+  }
+
+  _test_callback(entry) {
+    if (entry[TEMPLATE_CONTENTS] === undefined) {
+      this.to_delete.push({ path: entry[BASELINE_PATH], contents: null });
+      expect.fail(
+        "expected {0} to have a template at {1}",
+        entry[BASELINE_PATH],
+        entry[TEMPLATE_PATH]
+      );
       return;
     }
 
-    try {
-      fs.mkdirSync(this._baseline_path(template_path));
-    } catch (error) {
-      if (error.code !== "EEXIST") {
-        throw error;
+    const baseline_path = entry[BASELINE_PATH];
+    const result = this.get_result(entry[TEMPLATE_CONTENTS]);
+
+    if (entry[BASELINE_CONTENTS] === undefined) {
+      this.to_add.push({ path: baseline_path, contents: result });
+
+      expect.fail(
+        "expected {0} to have a baseline at {1}",
+        entry[TEMPLATE_PATH],
+        baseline_path
+      );
+    } else {
+      this.to_update.push({ path: baseline_path, contents: result });
+      const up_to_date = expect(result, "to equal", entry[BASELINE_CONTENTS]);
+      if (up_to_date) {
+        this.to_update.pop();
+        this.up_to_date.push(baseline_path);
       }
     }
   }
 
-  _define_test(template_entry) {
-    test(template_entry.name, () => this._test_callback(template_entry));
+  _update_snapshots() {
+    if (!UPDATE_BASELINES) {
+      expect(this, "not to have pending updates");
+      return;
+    }
+
+    for (const entry of this.to_add) {
+      if (entry.contents === IS_DIRECTORY) {
+        fs.mkdirSync(entry.path);
+      } else {
+        fs.writeFileSync(
+          entry.path,
+          JSON.stringify(entry.contents, null, 2) + EOL
+        );
+      }
+    }
+
+    for (const entry of this.to_update) {
+      fs.writeFileSync(
+        entry.path,
+        JSON.stringify(entry.contents, null, 2) + EOL
+      );
+    }
+
+    for (const entry of this.to_delete) {
+      if (entry.contents === IS_DIRECTORY) {
+        fs.rmdirSync(entry.path);
+      } else {
+        fs.unlinkSync(entry.path);
+      }
+    }
+
+    this._fail_udpate_mode();
   }
 
-  _test_callback(template_entry) {
-    const result = this.get_result();
-
-    if (UPDATE_BASELINES) {
-      this._save_baseline(template_entry.full_path, result);
-    } else {
-      const baseline = this._get_baseline(template_entry.full_path);
-      expect(result, "to equal", baseline);
-    }
+  _fail_udpate_mode() {
+    expect.fail({
+      message: output => {
+        output
+          .error("expected")
+          .space()
+          .append(expect.inspect(this, null, output.clone()))
+          .space()
+          .error("to not be in update mode")
+          .indentLines()
+          .newline()
+          .indent()
+          .text("pending baseline modifications have been saved to disk")
+          .space()
+          .newline()
+          .indent()
+          .text("unset UPDATE_BASELINES to run tests normally");
+      }
+    });
   }
 }
 
-function create_root_suite(root_name, get_result) {
-  const suite = new BaselineSuite(root_name, get_result);
+function create_root_suite(name, get_result) {
+  const suite = new BaselineSuite(name, get_result);
   suite.create();
 }
 
