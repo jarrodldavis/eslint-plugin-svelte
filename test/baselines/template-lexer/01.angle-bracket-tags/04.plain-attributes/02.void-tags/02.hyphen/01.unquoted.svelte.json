@@ -1,0 +1,137 @@
+[
+  {
+    "type": "html_open_start",
+    "value": "<",
+    "text": "<",
+    "offset": 0,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 1
+  },
+  {
+    "type": "html_tag_name",
+    "value": "input",
+    "text": "input",
+    "offset": 1,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 2
+  },
+  {
+    "type": "_whitespace",
+    "value": " ",
+    "text": " ",
+    "offset": 6,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 7
+  },
+  {
+    "type": "_html_attribute_start",
+    "value": "",
+    "text": "",
+    "offset": 7,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 8
+  },
+  {
+    "type": "_html_attribute_name_start",
+    "value": "",
+    "text": "",
+    "offset": 7,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 8
+  },
+  {
+    "type": "html_attribute_name",
+    "value": "data-id",
+    "text": "data-id",
+    "offset": 7,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 8
+  },
+  {
+    "type": "_html_attribute_name_end",
+    "value": "",
+    "text": "",
+    "offset": 14,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 15
+  },
+  {
+    "type": "html_attribute_equal",
+    "value": "=",
+    "text": "=",
+    "offset": 14,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 15
+  },
+  {
+    "type": "html_attribute_value",
+    "value": "some_id",
+    "text": "some_id",
+    "offset": 15,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 16
+  },
+  {
+    "type": "_html_attribute_value_end",
+    "value": "",
+    "text": "",
+    "offset": 22,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 23
+  },
+  {
+    "type": "_html_attribute_end",
+    "value": "",
+    "text": "",
+    "offset": 22,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 23
+  },
+  {
+    "type": "_whitespace",
+    "value": " ",
+    "text": " ",
+    "offset": 22,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 23
+  },
+  {
+    "type": "_html_attributes_end",
+    "value": "",
+    "text": "",
+    "offset": 23,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 24
+  },
+  {
+    "type": "html_open_end",
+    "value": "/>",
+    "text": "/>",
+    "offset": 23,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 24
+  },
+  {
+    "type": "_body",
+    "value": "\n",
+    "text": "\n",
+    "offset": 25,
+    "lineBreaks": 1,
+    "line": 1,
+    "col": 26
+  }
+]
