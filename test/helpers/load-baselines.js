@@ -17,108 +17,115 @@ const BASELINE_PATH = Symbol("baseline path");
 const BASELINE_CONTENTS = Symbol("baseline contents");
 const IS_DIRECTORY = Symbol("is directory");
 
-function get_baselines(name) {
-  return read_recursive(
-    path.join(BASELINE_ROOT, name, "/"),
-    FILES_TO_SKIP,
-    DIRECTORY_REGEX,
-    FILE_REGEX
-  );
-}
-
-function handle_entry(entry, parent, transform) {
-  const merged_entry = parent[entry.name] || {};
-  parent[entry.name] = merged_entry;
-
-  Object.assign(merged_entry, transform(entry));
+function swap(entry, search, replacement) {
+  let new_path = entry.full_path.replace(search.prefix, replacement.prefix);
 
   if (!entry.directory) {
-    return;
+    new_path = new_path.replace(search.suffix, replacement.suffix);
   }
 
-  for (const sub_entry of entry.entries) {
-    handle_entry(sub_entry, merged_entry, transform);
-  }
+  return new_path;
 }
 
-function get_baseline_path(baseline_directory, template_entry) {
-  let baseline_path = path.join(
-    baseline_directory,
-    template_entry.full_path.replace(TEMPLATE_ROOT, "")
-  );
-
-  if (!template_entry.directory) {
-    baseline_path += ".json";
+class BaselineLoader {
+  constructor(name) {
+    this.name = name;
+    this.baseline_directory = path.join(BASELINE_ROOT, name, "/");
+    this.result = {};
+    this._transform_template = this._transform_template.bind(this);
+    this._transform_baseline = this._transform_baseline.bind(this);
   }
 
-  return baseline_path;
-}
+  load() {
+    if (templates) {
+      this._handle_root_entry(templates, TEMPLATE_ROOT);
+    }
 
-function get_template_path(baseline_directory, baseline_entry) {
-  let template_path = path.join(
-    TEMPLATE_ROOT,
-    baseline_entry.full_path.replace(baseline_directory, "")
-  );
+    const baselines = read_recursive(
+      this.baseline_directory,
+      FILES_TO_SKIP,
+      DIRECTORY_REGEX,
+      FILE_REGEX
+    );
 
-  if (!baseline_entry.directory) {
-    template_path = template_path.replace(/\.json$/u, "");
+    if (baselines) {
+      this._handle_root_entry(baselines, this.baseline_directory);
+    }
+
+    return this.result.root;
   }
 
-  return template_path;
-}
+  _handle_root_entry(entries, full_path) {
+    if (!entries) {
+      return;
+    }
 
-function transform_template(baseline_directory, entry) {
-  return {
-    [NAME]: entry.name,
-    [IS_DIRECTORY]: entry.directory,
-    [TEMPLATE_PATH]: entry.full_path,
-    [BASELINE_PATH]: get_baseline_path(baseline_directory, entry),
-    [TEMPLATE_CONTENTS]: entry.directory ? IS_DIRECTORY : entry.contents
-  };
-}
+    const transform =
+      full_path === TEMPLATE_ROOT
+        ? this._transform_template
+        : this._transform_baseline;
 
-function load_baselines(name) {
-  const merged = {};
-  const baseline_directory = path.join(BASELINE_ROOT, name, "/");
-
-  handle_entry(
-    {
-      name: "root",
-      full_path: TEMPLATE_ROOT,
-      directory: true,
-      entries: templates
-    },
-    merged,
-    transform_template.bind(null, baseline_directory)
-  );
-
-  function transform_baseline(entry) {
-    return {
-      [NAME]: entry.name,
-      [IS_DIRECTORY]: entry.directory,
-      [TEMPLATE_PATH]: get_template_path(baseline_directory, entry),
-      [BASELINE_PATH]: entry.full_path,
-      [BASELINE_CONTENTS]: entry.directory
-        ? IS_DIRECTORY
-        : JSON.parse(entry.contents)
-    };
-  }
-
-  const baselines = get_baselines(name);
-  if (baselines) {
-    handle_entry(
-      {
-        name: "root",
-        full_path: baseline_directory,
-        directory: true,
-        entries: baselines
-      },
-      merged,
-      transform_baseline
+    this._handle_entry(
+      { name: "root", full_path, directory: true, entries },
+      this.result,
+      transform
     );
   }
 
-  return merged.root;
+  _handle_entry(entry, parent, transform) {
+    const merged_entry = parent[entry.name] || {};
+    parent[entry.name] = merged_entry;
+
+    Object.assign(merged_entry, transform(entry));
+
+    if (!entry.directory) {
+      return;
+    }
+
+    for (const sub_entry of entry.entries) {
+      this._handle_entry(sub_entry, merged_entry, transform);
+    }
+  }
+
+  _transform_common(entry) {
+    return {
+      [NAME]: entry.name,
+      [IS_DIRECTORY]: entry.directory
+    };
+  }
+
+  _transform_template(entry) {
+    return {
+      ...this._transform_common(entry),
+      [TEMPLATE_PATH]: entry.full_path,
+      [TEMPLATE_CONTENTS]: entry.directory ? IS_DIRECTORY : entry.contents,
+      [BASELINE_PATH]: swap(
+        entry,
+        { prefix: TEMPLATE_ROOT, suffix: /$/u },
+        { prefix: this.baseline_directory, suffix: ".json" }
+      )
+    };
+  }
+
+  _transform_baseline(entry) {
+    return {
+      ...this._transform_common(entry),
+      [BASELINE_PATH]: entry.full_path,
+      [BASELINE_CONTENTS]: entry.directory
+        ? IS_DIRECTORY
+        : JSON.parse(entry.contents),
+      [TEMPLATE_PATH]: swap(
+        entry,
+        { prefix: this.baseline_directory, suffix: /.json$/u },
+        { prefix: TEMPLATE_ROOT, suffix: "" }
+      )
+    };
+  }
+}
+
+function load_baselines(name) {
+  const loader = new BaselineLoader(name);
+  return loader.load();
 }
 
 module.exports = {
