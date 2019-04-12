@@ -17,70 +17,66 @@ const type_definition = {
   }
 };
 
-function print_add_line(output, path) {
-  output
-    .newline()
-    .indent()
-    .error("// missing")
-    .space()
-    .append(path);
+/* eslint-disable no-invalid-this */
+function annotation_alongside_missing_items(items, message) {
+  if (items.length === 0) {
+    return;
+  }
+
+  this.indent()
+    .annotationBlock(function() {
+      this.error(message)
+        .newline()
+        .appendItems(items, function() {
+          this.newline();
+        });
+    })
+    .newline();
 }
 
-function print_update_line(output, path, delimiter) {
-  output
-    .newline()
-    .indent()
-    .append(path)
-    .text(delimiter)
-    .space()
-    .error("// should be updated");
-}
+function annotation_alongside_existing_items(items, message, trailing_comma) {
+  if (items.length === 0) {
+    return;
+  }
 
-function print_delete_line(output, path, delimiter) {
-  output
-    .newline()
-    .indent()
-    .append(path)
-    .text(delimiter)
-    .space()
-    .error("// should be removed");
-}
+  const annotations = this.clone().error(message);
 
-function print_pending_updates(output, inspect, baseline_directory, pending) {
+  this.indent().block(function() {
+    this.appendItems(items, function() {
+      this.text(",").newline();
+      annotations.newline();
+    });
+
+    if (trailing_comma) {
+      this.text(",");
+    }
+  });
+
+  this.space()
+    .annotationBlock(annotations)
+    .newline();
+}
+/* eslint-enable no-invalid-this */
+
+function print_pending_updates(output, path_prefix, pending) {
+  output.addStyle("missing", annotation_alongside_missing_items);
+  output.addStyle("existing", annotation_alongside_existing_items);
+
+  function unprefix(entry) {
+    return entry.path.replace(path_prefix, "") || "./";
+  }
+
   const { to_add, to_update, to_delete } = pending;
 
-  output.append("[").indentLines();
-
-  const total = to_add.length + to_update.length + to_delete.length;
-  let current = 0;
-
-  function delimiter() {
-    current += 1;
-    return current < total ? "," : "";
-  }
-
-  function unprefix(entry_path) {
-    return entry_path.replace(baseline_directory, "") || "./";
-  }
-
-  for (const entry of to_add) {
-    print_add_line(output, inspect(unprefix(entry.path)), delimiter());
-  }
-
-  for (const entry of to_update) {
-    print_update_line(output, inspect(unprefix(entry.path)), delimiter());
-  }
-
-  for (const entry of to_delete) {
-    print_delete_line(output, inspect(unprefix(entry.path)), delimiter());
-  }
-
-  output
-    .nl()
+  return output
+    .append("[")
+    .newline()
+    .indentLines()
+    .missing(to_add.map(unprefix), "missing")
+    .existing(to_update.map(unprefix), "should be updated", to_delete.length)
+    .existing(to_delete.map(unprefix), "should be removed")
     .outdentLines()
     .append("]");
-
-  return output;
 }
 
 function assert_no_pending_updates(expect, suite) {
@@ -94,8 +90,8 @@ function assert_no_pending_updates(expect, suite) {
     },
     function() {
       expect.fail({
-        diff(output, _diff, inspect) {
-          return print_pending_updates(output, inspect, directory, {
+        diff(output) {
+          return print_pending_updates(output.clone(), directory, {
             to_add,
             to_update,
             to_delete
