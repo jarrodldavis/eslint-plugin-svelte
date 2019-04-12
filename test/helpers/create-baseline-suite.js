@@ -72,35 +72,25 @@ class BaselineSuite {
   }
 
   _test_callback(entry) {
-    if (entry[TEMPLATE_CONTENTS] === undefined) {
-      this.to_delete.push({ path: entry[BASELINE_PATH], contents: null });
-      expect.fail(
-        "expected {0} to have a template at {1}",
-        entry[BASELINE_PATH],
-        entry[TEMPLATE_PATH]
-      );
-      return;
-    }
-
     const baseline_path = entry[BASELINE_PATH];
+
+    // push-expect-pop becasue `expect` throws
+
+    this.to_delete.push({ path: baseline_path, contents: null });
+    expect(entry, "to have a template");
+    this.to_delete.pop();
+
     const result = this.get_result(entry[TEMPLATE_CONTENTS]);
 
-    if (entry[BASELINE_CONTENTS] === undefined) {
-      this.to_add.push({ path: baseline_path, contents: result });
+    this.to_add.push({ path: baseline_path, contents: result });
+    expect(entry, "to have a baseline");
+    this.to_add.pop();
 
-      expect.fail(
-        "expected {0} to have a baseline at {1}",
-        entry[TEMPLATE_PATH],
-        baseline_path
-      );
-    } else {
-      this.to_update.push({ path: baseline_path, contents: result });
-      const up_to_date = expect(result, "to equal", entry[BASELINE_CONTENTS]);
-      if (up_to_date) {
-        this.to_update.pop();
-        this.up_to_date.push(baseline_path);
-      }
-    }
+    this.to_update.push({ path: baseline_path, contents: result });
+    expect(result, "to equal", entry[BASELINE_CONTENTS]);
+    this.to_update.pop();
+
+    this.up_to_date.push(baseline_path);
   }
 
   _update_snapshots() {
