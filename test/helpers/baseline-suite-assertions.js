@@ -63,7 +63,7 @@ function print_pending_updates(output, path_prefix, pending) {
   output.addStyle("existing", annotation_alongside_existing_items);
 
   function unprefix(entry) {
-    return entry.path.replace(path_prefix, "") || "./";
+    return entry.path.replace(path_prefix, "<baseline_directory>/");
   }
 
   const { to_add, to_update, to_delete } = pending;
