@@ -1,0 +1,596 @@
+[
+  {
+    "type": "_script_start_tag",
+    "value": "<script>",
+    "text": "<script>",
+    "offset": 0,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 1
+  },
+  {
+    "type": "_script_body",
+    "value": "\n  const enabled = true,\n    random = Math.random(),\n    zero = 0;\n",
+    "text": "\n  const enabled = true,\n    random = Math.random(),\n    zero = 0;\n",
+    "offset": 8,
+    "lineBreaks": 4,
+    "line": 1,
+    "col": 9
+  },
+  {
+    "type": "_end_script_tag",
+    "value": "</script>",
+    "text": "</script>",
+    "offset": 75,
+    "lineBreaks": 0,
+    "line": 5,
+    "col": 1
+  },
+  {
+    "type": "_body",
+    "value": "\n\n",
+    "text": "\n\n",
+    "offset": 84,
+    "lineBreaks": 2,
+    "line": 5,
+    "col": 10
+  },
+  {
+    "type": "mustache_start",
+    "value": "{",
+    "text": "{",
+    "offset": 86,
+    "lineBreaks": 0,
+    "line": 7,
+    "col": 1
+  },
+  {
+    "type": "if_open",
+    "value": "#if",
+    "text": "#if",
+    "offset": 87,
+    "lineBreaks": 0,
+    "line": 7,
+    "col": 2
+  },
+  {
+    "type": "_if_expression",
+    "value": " enabled",
+    "text": " enabled",
+    "offset": 90,
+    "lineBreaks": 0,
+    "line": 7,
+    "col": 5
+  },
+  {
+    "type": "mustache_end",
+    "value": "}",
+    "text": "}",
+    "offset": 98,
+    "lineBreaks": 0,
+    "line": 7,
+    "col": 13
+  },
+  {
+    "type": "_mustache_end",
+    "value": "",
+    "text": "",
+    "offset": 99,
+    "lineBreaks": 0,
+    "line": 7,
+    "col": 14
+  },
+  {
+    "type": "_body",
+    "value": "\n  ",
+    "text": "\n  ",
+    "offset": 99,
+    "lineBreaks": 1,
+    "line": 7,
+    "col": 14
+  },
+  {
+    "type": "html_open_start",
+    "value": "<",
+    "text": "<",
+    "offset": 102,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 3
+  },
+  {
+    "type": "html_tag_name",
+    "value": "p",
+    "text": "p",
+    "offset": 103,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 4
+  },
+  {
+    "type": "_html_attributes_end",
+    "value": "",
+    "text": "",
+    "offset": 104,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 5
+  },
+  {
+    "type": "html_open_end",
+    "value": ">",
+    "text": ">",
+    "offset": 104,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 5
+  },
+  {
+    "type": "_body",
+    "value": "Enabled",
+    "text": "Enabled",
+    "offset": 105,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 6
+  },
+  {
+    "type": "html_close_start",
+    "value": "</",
+    "text": "</",
+    "offset": 112,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 13
+  },
+  {
+    "type": "html_tag_name",
+    "value": "p",
+    "text": "p",
+    "offset": 114,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 15
+  },
+  {
+    "type": "_html_close_end",
+    "value": "",
+    "text": "",
+    "offset": 115,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 16
+  },
+  {
+    "type": "html_close_end",
+    "value": ">",
+    "text": ">",
+    "offset": 115,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 16
+  },
+  {
+    "type": "_body",
+    "value": "\n",
+    "text": "\n",
+    "offset": 116,
+    "lineBreaks": 1,
+    "line": 8,
+    "col": 17
+  },
+  {
+    "type": "mustache_start",
+    "value": "{",
+    "text": "{",
+    "offset": 117,
+    "lineBreaks": 0,
+    "line": 9,
+    "col": 1
+  },
+  {
+    "type": "else_open",
+    "value": ":else",
+    "text": ":else",
+    "offset": 118,
+    "lineBreaks": 0,
+    "line": 9,
+    "col": 2
+  },
+  {
+    "type": "mustache_end",
+    "value": "}",
+    "text": "}",
+    "offset": 123,
+    "lineBreaks": 0,
+    "line": 9,
+    "col": 7
+  },
+  {
+    "type": "_mustache_end",
+    "value": "",
+    "text": "",
+    "offset": 124,
+    "lineBreaks": 0,
+    "line": 9,
+    "col": 8
+  },
+  {
+    "type": "_body",
+    "value": "\n  ",
+    "text": "\n  ",
+    "offset": 124,
+    "lineBreaks": 1,
+    "line": 9,
+    "col": 8
+  },
+  {
+    "type": "mustache_start",
+    "value": "{",
+    "text": "{",
+    "offset": 127,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 3
+  },
+  {
+    "type": "if_open",
+    "value": "#if",
+    "text": "#if",
+    "offset": 128,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 4
+  },
+  {
+    "type": "_if_expression",
+    "value": " random > zero",
+    "text": " random > zero",
+    "offset": 131,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 7
+  },
+  {
+    "type": "mustache_end",
+    "value": "}",
+    "text": "}",
+    "offset": 145,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 21
+  },
+  {
+    "type": "_mustache_end",
+    "value": "",
+    "text": "",
+    "offset": 146,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 22
+  },
+  {
+    "type": "_body",
+    "value": "\n    ",
+    "text": "\n    ",
+    "offset": 146,
+    "lineBreaks": 1,
+    "line": 10,
+    "col": 22
+  },
+  {
+    "type": "html_open_start",
+    "value": "<",
+    "text": "<",
+    "offset": 151,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 5
+  },
+  {
+    "type": "html_tag_name",
+    "value": "p",
+    "text": "p",
+    "offset": 152,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 6
+  },
+  {
+    "type": "_html_attributes_end",
+    "value": "",
+    "text": "",
+    "offset": 153,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 7
+  },
+  {
+    "type": "html_open_end",
+    "value": ">",
+    "text": ">",
+    "offset": 153,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 7
+  },
+  {
+    "type": "_body",
+    "value": "Disabled, Positive",
+    "text": "Disabled, Positive",
+    "offset": 154,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 8
+  },
+  {
+    "type": "html_close_start",
+    "value": "</",
+    "text": "</",
+    "offset": 172,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 26
+  },
+  {
+    "type": "html_tag_name",
+    "value": "p",
+    "text": "p",
+    "offset": 174,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 28
+  },
+  {
+    "type": "_html_close_end",
+    "value": "",
+    "text": "",
+    "offset": 175,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 29
+  },
+  {
+    "type": "html_close_end",
+    "value": ">",
+    "text": ">",
+    "offset": 175,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 29
+  },
+  {
+    "type": "_body",
+    "value": "\n  ",
+    "text": "\n  ",
+    "offset": 176,
+    "lineBreaks": 1,
+    "line": 11,
+    "col": 30
+  },
+  {
+    "type": "mustache_start",
+    "value": "{",
+    "text": "{",
+    "offset": 179,
+    "lineBreaks": 0,
+    "line": 12,
+    "col": 3
+  },
+  {
+    "type": "else_open",
+    "value": ":else",
+    "text": ":else",
+    "offset": 180,
+    "lineBreaks": 0,
+    "line": 12,
+    "col": 4
+  },
+  {
+    "type": "mustache_end",
+    "value": "}",
+    "text": "}",
+    "offset": 185,
+    "lineBreaks": 0,
+    "line": 12,
+    "col": 9
+  },
+  {
+    "type": "_mustache_end",
+    "value": "",
+    "text": "",
+    "offset": 186,
+    "lineBreaks": 0,
+    "line": 12,
+    "col": 10
+  },
+  {
+    "type": "_body",
+    "value": "\n    ",
+    "text": "\n    ",
+    "offset": 186,
+    "lineBreaks": 1,
+    "line": 12,
+    "col": 10
+  },
+  {
+    "type": "html_open_start",
+    "value": "<",
+    "text": "<",
+    "offset": 191,
+    "lineBreaks": 0,
+    "line": 13,
+    "col": 5
+  },
+  {
+    "type": "html_tag_name",
+    "value": "p",
+    "text": "p",
+    "offset": 192,
+    "lineBreaks": 0,
+    "line": 13,
+    "col": 6
+  },
+  {
+    "type": "_html_attributes_end",
+    "value": "",
+    "text": "",
+    "offset": 193,
+    "lineBreaks": 0,
+    "line": 13,
+    "col": 7
+  },
+  {
+    "type": "html_open_end",
+    "value": ">",
+    "text": ">",
+    "offset": 193,
+    "lineBreaks": 0,
+    "line": 13,
+    "col": 7
+  },
+  {
+    "type": "_body",
+    "value": "Disabled, Not Positive",
+    "text": "Disabled, Not Positive",
+    "offset": 194,
+    "lineBreaks": 0,
+    "line": 13,
+    "col": 8
+  },
+  {
+    "type": "html_close_start",
+    "value": "</",
+    "text": "</",
+    "offset": 216,
+    "lineBreaks": 0,
+    "line": 13,
+    "col": 30
+  },
+  {
+    "type": "html_tag_name",
+    "value": "p",
+    "text": "p",
+    "offset": 218,
+    "lineBreaks": 0,
+    "line": 13,
+    "col": 32
+  },
+  {
+    "type": "_html_close_end",
+    "value": "",
+    "text": "",
+    "offset": 219,
+    "lineBreaks": 0,
+    "line": 13,
+    "col": 33
+  },
+  {
+    "type": "html_close_end",
+    "value": ">",
+    "text": ">",
+    "offset": 219,
+    "lineBreaks": 0,
+    "line": 13,
+    "col": 33
+  },
+  {
+    "type": "_body",
+    "value": "\n  ",
+    "text": "\n  ",
+    "offset": 220,
+    "lineBreaks": 1,
+    "line": 13,
+    "col": 34
+  },
+  {
+    "type": "mustache_start",
+    "value": "{",
+    "text": "{",
+    "offset": 223,
+    "lineBreaks": 0,
+    "line": 14,
+    "col": 3
+  },
+  {
+    "type": "if_close",
+    "value": "/if",
+    "text": "/if",
+    "offset": 224,
+    "lineBreaks": 0,
+    "line": 14,
+    "col": 4
+  },
+  {
+    "type": "mustache_end",
+    "value": "}",
+    "text": "}",
+    "offset": 227,
+    "lineBreaks": 0,
+    "line": 14,
+    "col": 7
+  },
+  {
+    "type": "_mustache_end",
+    "value": "",
+    "text": "",
+    "offset": 228,
+    "lineBreaks": 0,
+    "line": 14,
+    "col": 8
+  },
+  {
+    "type": "_body",
+    "value": "\n",
+    "text": "\n",
+    "offset": 228,
+    "lineBreaks": 1,
+    "line": 14,
+    "col": 8
+  },
+  {
+    "type": "mustache_start",
+    "value": "{",
+    "text": "{",
+    "offset": 229,
+    "lineBreaks": 0,
+    "line": 15,
+    "col": 1
+  },
+  {
+    "type": "if_close",
+    "value": "/if",
+    "text": "/if",
+    "offset": 230,
+    "lineBreaks": 0,
+    "line": 15,
+    "col": 2
+  },
+  {
+    "type": "mustache_end",
+    "value": "}",
+    "text": "}",
+    "offset": 233,
+    "lineBreaks": 0,
+    "line": 15,
+    "col": 5
+  },
+  {
+    "type": "_mustache_end",
+    "value": "",
+    "text": "",
+    "offset": 234,
+    "lineBreaks": 0,
+    "line": 15,
+    "col": 6
+  },
+  {
+    "type": "_body",
+    "value": "\n",
+    "text": "\n",
+    "offset": 234,
+    "lineBreaks": 1,
+    "line": 15,
+    "col": 6
+  }
+]
