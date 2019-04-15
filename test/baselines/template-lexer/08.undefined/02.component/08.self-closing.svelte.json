@@ -1,0 +1,56 @@
+[
+  {
+    "type": "html_open_start",
+    "value": "<",
+    "text": "<",
+    "offset": 0,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 1
+  },
+  {
+    "type": "html_component_identifier",
+    "value": "Foo",
+    "text": "Foo",
+    "offset": 1,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 2
+  },
+  {
+    "type": "_whitespace",
+    "value": " ",
+    "text": " ",
+    "offset": 4,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 5
+  },
+  {
+    "type": "_html_attributes_end",
+    "value": "",
+    "text": "",
+    "offset": 5,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 6
+  },
+  {
+    "type": "html_open_end",
+    "value": "/>",
+    "text": "/>",
+    "offset": 5,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 6
+  },
+  {
+    "type": "_body",
+    "value": "\n",
+    "text": "\n",
+    "offset": 7,
+    "lineBreaks": 1,
+    "line": 1,
+    "col": 8
+  }
+]

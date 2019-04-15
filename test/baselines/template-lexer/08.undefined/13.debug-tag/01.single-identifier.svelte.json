@@ -1,0 +1,56 @@
+[
+  {
+    "type": "mustache_start",
+    "value": "{",
+    "text": "{",
+    "offset": 0,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 1
+  },
+  {
+    "type": "debug_start",
+    "value": "@debug",
+    "text": "@debug",
+    "offset": 1,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 2
+  },
+  {
+    "type": "_debug_identifiers",
+    "value": " active",
+    "text": " active",
+    "offset": 7,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 8
+  },
+  {
+    "type": "mustache_end",
+    "value": "}",
+    "text": "}",
+    "offset": 14,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 15
+  },
+  {
+    "type": "_mustache_end",
+    "value": "",
+    "text": "",
+    "offset": 15,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 16
+  },
+  {
+    "type": "_body",
+    "value": "\n",
+    "text": "\n",
+    "offset": 15,
+    "lineBreaks": 1,
+    "line": 1,
+    "col": 16
+  }
+]
