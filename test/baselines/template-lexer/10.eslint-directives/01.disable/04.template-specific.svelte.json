@@ -1,0 +1,488 @@
+[
+  {
+    "type": "_comment_start",
+    "value": "<!--",
+    "text": "<!--",
+    "offset": 0,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 1
+  },
+  {
+    "type": "_comment_contents",
+    "value": " eslint-disable one-var, camelcase ",
+    "text": " eslint-disable one-var, camelcase ",
+    "offset": 4,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 5
+  },
+  {
+    "type": "_comment_end",
+    "value": "-->",
+    "text": "-->",
+    "offset": 39,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 40
+  },
+  {
+    "type": "_body",
+    "value": "\n",
+    "text": "\n",
+    "offset": 42,
+    "lineBreaks": 1,
+    "line": 1,
+    "col": 43
+  },
+  {
+    "type": "_script_start_tag",
+    "value": "<script>",
+    "text": "<script>",
+    "offset": 43,
+    "lineBreaks": 0,
+    "line": 2,
+    "col": 1
+  },
+  {
+    "type": "_script_body",
+    "value": "\n  const first = 2;\n\n  const posts = [];\n",
+    "text": "\n  const first = 2;\n\n  const posts = [];\n",
+    "offset": 51,
+    "lineBreaks": 4,
+    "line": 2,
+    "col": 9
+  },
+  {
+    "type": "_end_script_tag",
+    "value": "</script>",
+    "text": "</script>",
+    "offset": 92,
+    "lineBreaks": 0,
+    "line": 6,
+    "col": 1
+  },
+  {
+    "type": "_body",
+    "value": "\n\n",
+    "text": "\n\n",
+    "offset": 101,
+    "lineBreaks": 2,
+    "line": 6,
+    "col": 10
+  },
+  {
+    "type": "html_open_start",
+    "value": "<",
+    "text": "<",
+    "offset": 103,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 1
+  },
+  {
+    "type": "html_tag_name",
+    "value": "div",
+    "text": "div",
+    "offset": 104,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 2
+  },
+  {
+    "type": "_html_attributes_end",
+    "value": "",
+    "text": "",
+    "offset": 107,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 5
+  },
+  {
+    "type": "html_open_end",
+    "value": ">",
+    "text": ">",
+    "offset": 107,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 5
+  },
+  {
+    "type": "mustache_start",
+    "value": "{",
+    "text": "{",
+    "offset": 108,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 6
+  },
+  {
+    "type": "_simple_tag_start",
+    "value": "",
+    "text": "",
+    "offset": 109,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 7
+  },
+  {
+    "type": "_simple_mustache_expression",
+    "value": "first",
+    "text": "first",
+    "offset": 109,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 7
+  },
+  {
+    "type": "mustache_end",
+    "value": "}",
+    "text": "}",
+    "offset": 114,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 12
+  },
+  {
+    "type": "_mustache_end",
+    "value": "",
+    "text": "",
+    "offset": 115,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 13
+  },
+  {
+    "type": "html_close_start",
+    "value": "</",
+    "text": "</",
+    "offset": 115,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 13
+  },
+  {
+    "type": "html_tag_name",
+    "value": "div",
+    "text": "div",
+    "offset": 117,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 15
+  },
+  {
+    "type": "_html_close_end",
+    "value": "",
+    "text": "",
+    "offset": 120,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 18
+  },
+  {
+    "type": "html_close_end",
+    "value": ">",
+    "text": ">",
+    "offset": 120,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 18
+  },
+  {
+    "type": "_body",
+    "value": "\n\n",
+    "text": "\n\n",
+    "offset": 121,
+    "lineBreaks": 2,
+    "line": 8,
+    "col": 19
+  },
+  {
+    "type": "mustache_start",
+    "value": "{",
+    "text": "{",
+    "offset": 123,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 1
+  },
+  {
+    "type": "each_open",
+    "value": "#each",
+    "text": "#each",
+    "offset": 124,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 2
+  },
+  {
+    "type": "_whitespace",
+    "value": " ",
+    "text": " ",
+    "offset": 129,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 7
+  },
+  {
+    "type": "_each_expression_start",
+    "value": "",
+    "text": "",
+    "offset": 130,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 8
+  },
+  {
+    "type": "_each_expression",
+    "value": "posts ",
+    "text": "posts ",
+    "offset": 130,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 8
+  },
+  {
+    "type": "each_as",
+    "value": "as",
+    "text": "as",
+    "offset": 136,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 14
+  },
+  {
+    "type": "_whitespace",
+    "value": " ",
+    "text": " ",
+    "offset": 138,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 16
+  },
+  {
+    "type": "_each_context_start",
+    "value": "",
+    "text": "",
+    "offset": 139,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 17
+  },
+  {
+    "type": "_each_context",
+    "value": "snake_case_post",
+    "text": "snake_case_post",
+    "offset": 139,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 17
+  },
+  {
+    "type": "_each_context_end",
+    "value": "",
+    "text": "",
+    "offset": 154,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 32
+  },
+  {
+    "type": "mustache_end",
+    "value": "}",
+    "text": "}",
+    "offset": 154,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 32
+  },
+  {
+    "type": "_mustache_end",
+    "value": "",
+    "text": "",
+    "offset": 155,
+    "lineBreaks": 0,
+    "line": 10,
+    "col": 33
+  },
+  {
+    "type": "_body",
+    "value": "\n  ",
+    "text": "\n  ",
+    "offset": 155,
+    "lineBreaks": 1,
+    "line": 10,
+    "col": 33
+  },
+  {
+    "type": "html_open_start",
+    "value": "<",
+    "text": "<",
+    "offset": 158,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 3
+  },
+  {
+    "type": "html_tag_name",
+    "value": "p",
+    "text": "p",
+    "offset": 159,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 4
+  },
+  {
+    "type": "_html_attributes_end",
+    "value": "",
+    "text": "",
+    "offset": 160,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 5
+  },
+  {
+    "type": "html_open_end",
+    "value": ">",
+    "text": ">",
+    "offset": 160,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 5
+  },
+  {
+    "type": "mustache_start",
+    "value": "{",
+    "text": "{",
+    "offset": 161,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 6
+  },
+  {
+    "type": "_simple_tag_start",
+    "value": "",
+    "text": "",
+    "offset": 162,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 7
+  },
+  {
+    "type": "_simple_mustache_expression",
+    "value": "snake_case_post",
+    "text": "snake_case_post",
+    "offset": 162,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 7
+  },
+  {
+    "type": "mustache_end",
+    "value": "}",
+    "text": "}",
+    "offset": 177,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 22
+  },
+  {
+    "type": "_mustache_end",
+    "value": "",
+    "text": "",
+    "offset": 178,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 23
+  },
+  {
+    "type": "html_close_start",
+    "value": "</",
+    "text": "</",
+    "offset": 178,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 23
+  },
+  {
+    "type": "html_tag_name",
+    "value": "p",
+    "text": "p",
+    "offset": 180,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 25
+  },
+  {
+    "type": "_html_close_end",
+    "value": "",
+    "text": "",
+    "offset": 181,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 26
+  },
+  {
+    "type": "html_close_end",
+    "value": ">",
+    "text": ">",
+    "offset": 181,
+    "lineBreaks": 0,
+    "line": 11,
+    "col": 26
+  },
+  {
+    "type": "_body",
+    "value": "\n",
+    "text": "\n",
+    "offset": 182,
+    "lineBreaks": 1,
+    "line": 11,
+    "col": 27
+  },
+  {
+    "type": "mustache_start",
+    "value": "{",
+    "text": "{",
+    "offset": 183,
+    "lineBreaks": 0,
+    "line": 12,
+    "col": 1
+  },
+  {
+    "type": "each_close",
+    "value": "/each",
+    "text": "/each",
+    "offset": 184,
+    "lineBreaks": 0,
+    "line": 12,
+    "col": 2
+  },
+  {
+    "type": "mustache_end",
+    "value": "}",
+    "text": "}",
+    "offset": 189,
+    "lineBreaks": 0,
+    "line": 12,
+    "col": 7
+  },
+  {
+    "type": "_mustache_end",
+    "value": "",
+    "text": "",
+    "offset": 190,
+    "lineBreaks": 0,
+    "line": 12,
+    "col": 8
+  },
+  {
+    "type": "_body",
+    "value": "\n",
+    "text": "\n",
+    "offset": 190,
+    "lineBreaks": 1,
+    "line": 12,
+    "col": 8
+  }
+]
