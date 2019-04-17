@@ -1,0 +1,92 @@
+[
+  {
+    "type": "mustache_start",
+    "value": "{",
+    "text": "{",
+    "offset": 0,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 1
+  },
+  {
+    "type": "raw_html_start",
+    "value": "@html",
+    "text": "@html",
+    "offset": 1,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 2
+  },
+  {
+    "type": "_raw_html_expression",
+    "value": " `<div>$",
+    "text": " `<div>$",
+    "offset": 6,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 7
+  },
+  {
+    "type": "_left_brace",
+    "value": "{",
+    "text": "{",
+    "offset": 14,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 15
+  },
+  {
+    "type": "_brace_contents",
+    "value": "value",
+    "text": "value",
+    "offset": 15,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 16
+  },
+  {
+    "type": "_right_brace",
+    "value": "}",
+    "text": "}",
+    "offset": 20,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 21
+  },
+  {
+    "type": "_raw_html_expression",
+    "value": "</div>`",
+    "text": "</div>`",
+    "offset": 21,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 22
+  },
+  {
+    "type": "mustache_end",
+    "value": "}",
+    "text": "}",
+    "offset": 28,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 29
+  },
+  {
+    "type": "_mustache_end",
+    "value": "",
+    "text": "",
+    "offset": 29,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 30
+  },
+  {
+    "type": "_body",
+    "value": "\n",
+    "text": "\n",
+    "offset": 29,
+    "lineBreaks": 1,
+    "line": 1,
+    "col": 30
+  }
+]

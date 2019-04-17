@@ -1,0 +1,227 @@
+[
+  {
+    "type": "_script_start_tag",
+    "value": "<script>",
+    "text": "<script>",
+    "offset": 0,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 1
+  },
+  {
+    "type": "_script_body",
+    "value": "\n  import {count} from \"./store\";\n\n  const min = 0;\n",
+    "text": "\n  import {count} from \"./store\";\n\n  const min = 0;\n",
+    "offset": 8,
+    "lineBreaks": 4,
+    "line": 1,
+    "col": 9
+  },
+  {
+    "type": "_end_script_tag",
+    "value": "</script>",
+    "text": "</script>",
+    "offset": 60,
+    "lineBreaks": 0,
+    "line": 5,
+    "col": 1
+  },
+  {
+    "type": "_body",
+    "value": "\n\n",
+    "text": "\n\n",
+    "offset": 69,
+    "lineBreaks": 2,
+    "line": 5,
+    "col": 10
+  },
+  {
+    "type": "mustache_start",
+    "value": "{",
+    "text": "{",
+    "offset": 71,
+    "lineBreaks": 0,
+    "line": 7,
+    "col": 1
+  },
+  {
+    "type": "if_open",
+    "value": "#if",
+    "text": "#if",
+    "offset": 72,
+    "lineBreaks": 0,
+    "line": 7,
+    "col": 2
+  },
+  {
+    "type": "_if_expression",
+    "value": " $count > min",
+    "text": " $count > min",
+    "offset": 75,
+    "lineBreaks": 0,
+    "line": 7,
+    "col": 5
+  },
+  {
+    "type": "mustache_end",
+    "value": "}",
+    "text": "}",
+    "offset": 88,
+    "lineBreaks": 0,
+    "line": 7,
+    "col": 18
+  },
+  {
+    "type": "_mustache_end",
+    "value": "",
+    "text": "",
+    "offset": 89,
+    "lineBreaks": 0,
+    "line": 7,
+    "col": 19
+  },
+  {
+    "type": "_body",
+    "value": "\n  ",
+    "text": "\n  ",
+    "offset": 89,
+    "lineBreaks": 1,
+    "line": 7,
+    "col": 19
+  },
+  {
+    "type": "html_open_start",
+    "value": "<",
+    "text": "<",
+    "offset": 92,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 3
+  },
+  {
+    "type": "html_tag_name",
+    "value": "p",
+    "text": "p",
+    "offset": 93,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 4
+  },
+  {
+    "type": "_html_attributes_end",
+    "value": "",
+    "text": "",
+    "offset": 94,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 5
+  },
+  {
+    "type": "html_open_end",
+    "value": ">",
+    "text": ">",
+    "offset": 94,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 5
+  },
+  {
+    "type": "_body",
+    "value": "Positive",
+    "text": "Positive",
+    "offset": 95,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 6
+  },
+  {
+    "type": "html_close_start",
+    "value": "</",
+    "text": "</",
+    "offset": 103,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 14
+  },
+  {
+    "type": "html_tag_name",
+    "value": "p",
+    "text": "p",
+    "offset": 105,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 16
+  },
+  {
+    "type": "_html_close_end",
+    "value": "",
+    "text": "",
+    "offset": 106,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 17
+  },
+  {
+    "type": "html_close_end",
+    "value": ">",
+    "text": ">",
+    "offset": 106,
+    "lineBreaks": 0,
+    "line": 8,
+    "col": 17
+  },
+  {
+    "type": "_body",
+    "value": "\n",
+    "text": "\n",
+    "offset": 107,
+    "lineBreaks": 1,
+    "line": 8,
+    "col": 18
+  },
+  {
+    "type": "mustache_start",
+    "value": "{",
+    "text": "{",
+    "offset": 108,
+    "lineBreaks": 0,
+    "line": 9,
+    "col": 1
+  },
+  {
+    "type": "if_close",
+    "value": "/if",
+    "text": "/if",
+    "offset": 109,
+    "lineBreaks": 0,
+    "line": 9,
+    "col": 2
+  },
+  {
+    "type": "mustache_end",
+    "value": "}",
+    "text": "}",
+    "offset": 112,
+    "lineBreaks": 0,
+    "line": 9,
+    "col": 5
+  },
+  {
+    "type": "_mustache_end",
+    "value": "",
+    "text": "",
+    "offset": 113,
+    "lineBreaks": 0,
+    "line": 9,
+    "col": 6
+  },
+  {
+    "type": "_body",
+    "value": "\n",
+    "text": "\n",
+    "offset": 113,
+    "lineBreaks": 1,
+    "line": 9,
+    "col": 6
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "type": "mustache_start",
+    "value": "{",
+    "text": "{",
+    "offset": 0,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 1
+  },
+  {
+    "type": "raw_html_start",
+    "value": "@html",
+    "text": "@html",
+    "offset": 1,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 2
+  },
+  {
+    "type": "_raw_html_expression",
+    "value": " html",
+    "text": " html",
+    "offset": 6,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 7
+  },
+  {
+    "type": "mustache_end",
+    "value": "}",
+    "text": "}",
+    "offset": 11,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 12
+  },
+  {
+    "type": "_mustache_end",
+    "value": "",
+    "text": "",
+    "offset": 12,
+    "lineBreaks": 0,
+    "line": 1,
+    "col": 13
+  },
+  {
+    "type": "_body",
+    "value": "\n",
+    "text": "\n",
+    "offset": 12,
+    "lineBreaks": 1,
+    "line": 1,
+    "col": 13
+  }
+]
