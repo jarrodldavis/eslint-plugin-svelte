@@ -1,0 +1,5 @@
+{
+  "all": true,
+  "include": ["index.js", "individual-warnings.js", "lib/**/*.js"],
+  "reporter": ["lcovonly", "text"]
+}
