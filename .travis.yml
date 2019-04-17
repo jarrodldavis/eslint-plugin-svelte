@@ -18,9 +18,23 @@ env:
   - "ESLINT_VERSION=5.11"
   - "ESLINT_VERSION=5.10"
 install:
+  # ensure ESLint-provided peer dependencies are resolved by installing ESLint
+  - npm rm acorn eslint-scope eslint-visitor-keys espree esquery estraverse
   - npm install "eslint@$ESLINT_VERSION"
+  # show diffs for debugging purposes
+  - git diff package.json
+  - git diff package-lock.json
+  # install other dependencies
   - npm ci
 cache: npm
+before_script:
+  # display versions for debugging purposes
+  - node -v
+  - npm -v
+  - ./node_modules/.bin/eslint -v
+  # show diffs for debugging purposes
+  - git diff package.json
+  - git diff package-lock.json
 script:
   - npm run lint
   - npm run prettier
