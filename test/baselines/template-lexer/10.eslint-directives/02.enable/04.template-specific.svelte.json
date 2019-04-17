@@ -325,8 +325,8 @@
   },
   {
     "type": "_comment_contents",
-    "value": " eslint-enable camelcase",
-    "text": " eslint-enable camelcase",
+    "value": " eslint-enable camelcase ",
+    "text": " eslint-enable camelcase ",
     "offset": 160,
     "lineBreaks": 0,
     "line": 11,
@@ -336,25 +336,25 @@
     "type": "_comment_end",
     "value": "-->",
     "text": "-->",
-    "offset": 184,
+    "offset": 185,
     "lineBreaks": 0,
     "line": 11,
-    "col": 29
+    "col": 30
   },
   {
     "type": "_body",
     "value": "\n  ",
     "text": "\n  ",
-    "offset": 187,
+    "offset": 188,
     "lineBreaks": 1,
     "line": 11,
-    "col": 32
+    "col": 33
   },
   {
     "type": "html_open_start",
     "value": "<",
     "text": "<",
-    "offset": 190,
+    "offset": 191,
     "lineBreaks": 0,
     "line": 12,
     "col": 3
@@ -363,7 +363,7 @@
     "type": "html_tag_name",
     "value": "p",
     "text": "p",
-    "offset": 191,
+    "offset": 192,
     "lineBreaks": 0,
     "line": 12,
     "col": 4
@@ -372,7 +372,7 @@
     "type": "_html_attributes_end",
     "value": "",
     "text": "",
-    "offset": 192,
+    "offset": 193,
     "lineBreaks": 0,
     "line": 12,
     "col": 5
@@ -381,7 +381,7 @@
     "type": "html_open_end",
     "value": ">",
     "text": ">",
-    "offset": 192,
+    "offset": 193,
     "lineBreaks": 0,
     "line": 12,
     "col": 5
@@ -390,7 +390,7 @@
     "type": "mustache_start",
     "value": "{",
     "text": "{",
-    "offset": 193,
+    "offset": 194,
     "lineBreaks": 0,
     "line": 12,
     "col": 6
@@ -399,7 +399,7 @@
     "type": "_simple_tag_start",
     "value": "",
     "text": "",
-    "offset": 194,
+    "offset": 195,
     "lineBreaks": 0,
     "line": 12,
     "col": 7
@@ -408,7 +408,7 @@
     "type": "_simple_mustache_expression",
     "value": "snake_case_post",
     "text": "snake_case_post",
-    "offset": 194,
+    "offset": 195,
     "lineBreaks": 0,
     "line": 12,
     "col": 7
@@ -417,7 +417,7 @@
     "type": "mustache_end",
     "value": "}",
     "text": "}",
-    "offset": 209,
+    "offset": 210,
     "lineBreaks": 0,
     "line": 12,
     "col": 22
@@ -426,7 +426,7 @@
     "type": "_mustache_end",
     "value": "",
     "text": "",
-    "offset": 210,
+    "offset": 211,
     "lineBreaks": 0,
     "line": 12,
     "col": 23
@@ -435,7 +435,7 @@
     "type": "html_close_start",
     "value": "</",
     "text": "</",
-    "offset": 210,
+    "offset": 211,
     "lineBreaks": 0,
     "line": 12,
     "col": 23
@@ -444,7 +444,7 @@
     "type": "html_tag_name",
     "value": "p",
     "text": "p",
-    "offset": 212,
+    "offset": 213,
     "lineBreaks": 0,
     "line": 12,
     "col": 25
@@ -453,7 +453,7 @@
     "type": "_html_close_end",
     "value": "",
     "text": "",
-    "offset": 213,
+    "offset": 214,
     "lineBreaks": 0,
     "line": 12,
     "col": 26
@@ -462,7 +462,7 @@
     "type": "html_close_end",
     "value": ">",
     "text": ">",
-    "offset": 213,
+    "offset": 214,
     "lineBreaks": 0,
     "line": 12,
     "col": 26
@@ -471,7 +471,7 @@
     "type": "_body",
     "value": "\n",
     "text": "\n",
-    "offset": 214,
+    "offset": 215,
     "lineBreaks": 1,
     "line": 12,
     "col": 27
@@ -480,7 +480,7 @@
     "type": "mustache_start",
     "value": "{",
     "text": "{",
-    "offset": 215,
+    "offset": 216,
     "lineBreaks": 0,
     "line": 13,
     "col": 1
@@ -489,7 +489,7 @@
     "type": "each_close",
     "value": "/each",
     "text": "/each",
-    "offset": 216,
+    "offset": 217,
     "lineBreaks": 0,
     "line": 13,
     "col": 2
@@ -498,7 +498,7 @@
     "type": "mustache_end",
     "value": "}",
     "text": "}",
-    "offset": 221,
+    "offset": 222,
     "lineBreaks": 0,
     "line": 13,
     "col": 7
@@ -507,7 +507,7 @@
     "type": "_mustache_end",
     "value": "",
     "text": "",
-    "offset": 222,
+    "offset": 223,
     "lineBreaks": 0,
     "line": 13,
     "col": 8
@@ -516,7 +516,7 @@
     "type": "_body",
     "value": "\n",
     "text": "\n",
-    "offset": 222,
+    "offset": 223,
     "lineBreaks": 1,
     "line": 13,
     "col": 8
