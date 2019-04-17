@@ -1,0 +1,57 @@
+{
+  // configure editor for prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.insertSpaces": true,
+  "editor.rulers": [80],
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "html.format.enable": false,
+  "json.format.enable": false,
+  "javascript.format.enable": false,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.format.enable": false,
+  "typescript.preferences.quoteStyle": "single",
+
+  // exclude big folders
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "test/baselines": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "test/baselines": true
+  },
+
+  // disable redundant or erroneous built-in code suggestions
+  "javascript.suggestionActions.enabled": false,
+  "typescript.suggestionActions.enabled": false,
+
+  // configure git commit rules
+  "git.inputValidationLength": 72,
+  "git.inputValidationSubjectLength": 50,
+
+  // configure test explorer
+  "mochaExplorer.files": "test/**/*.spec.js",
+  "mochaExplorer.mochaPath": "node_modules/mocha",
+  "mochaExplorer.ui": "tdd",
+
+  // disable redundant/not-working parts of Svelte extension
+  "svelte.plugin.svelte.diagnostics.enable": false,
+  "svelte.plugin.typescript.diagnostics.enable": false,
+
+  // configure other extensions
+  "eslint.enable": true,
+  "eslint.packageManager": "npm",
+  "npm.packageManager": "npm",
+}
