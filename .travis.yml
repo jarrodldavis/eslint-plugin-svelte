@@ -1,0 +1,41 @@
+language: node_js
+node_js:
+  - "11.14"
+  - "11.13"
+  - "11.12"
+  - "11.11"
+  - "11.10.1"
+  - "10.15"
+  - "10.14"
+  - "10.13"
+env:
+  - "ESLINT_VERSION=6.0.0-alpha.0" # eslint@next
+  - "ESLINT_VERSION=5.16" # eslint@latest
+  - "ESLINT_VERSION=5.15"
+  - "ESLINT_VERSION=5.14"
+  - "ESLINT_VERSION=5.13"
+  - "ESLINT_VERSION=5.12"
+  - "ESLINT_VERSION=5.11"
+  - "ESLINT_VERSION=5.10"
+install:
+  # ensure ESLint-provided peer dependencies are resolved by installing ESLint
+  - npm rm acorn eslint-scope eslint-visitor-keys espree esquery estraverse
+  - npm install "eslint@$ESLINT_VERSION"
+  # show diffs for debugging purposes
+  - git diff package.json
+  - git diff package-lock.json
+  # install other dependencies
+  - npm ci
+cache: npm
+before_script:
+  # display versions for debugging purposes
+  - node -v
+  - npm -v
+  - ./node_modules/.bin/eslint -v
+  # show diffs for debugging purposes
+  - git diff package.json
+  - git diff package-lock.json
+script:
+  - npm run lint
+  - npm run prettier
+  - npm test
