@@ -8,6 +8,6 @@
 <div>{first}</div>
 
 {#each posts as snake_case_post}
-<!-- eslint-enable camelcase-->
+<!-- eslint-enable camelcase -->
   <p>{snake_case_post}</p>
 {/each}
