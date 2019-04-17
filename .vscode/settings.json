@@ -53,5 +53,5 @@
   // configure other extensions
   "eslint.enable": true,
   "eslint.packageManager": "npm",
-  "npm.packageManager": "npm",
+  "npm.packageManager": "npm"
 }
