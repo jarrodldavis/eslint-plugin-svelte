@@ -18,8 +18,8 @@ env:
   - "ESLINT_VERSION=5.11"
   - "ESLINT_VERSION=5.10"
 install:
+  - npm install "eslint@$ESLINT_VERSION"
   - npm ci
-  - npm install --no-save "eslint@$ESLINT_VERSION"
 cache: npm
 script:
   - npm run lint
