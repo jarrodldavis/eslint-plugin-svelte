@@ -297,31 +297,13 @@
     "col": 22
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"duration\"",
+    "text": "\"duration\"",
     "offset": 191,
     "lineBreaks": 0,
     "line": 8,
     "col": 23
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "duration",
-    "text": "duration",
-    "offset": 192,
-    "lineBreaks": 0,
-    "line": 8,
-    "col": 24
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 200,
-    "lineBreaks": 0,
-    "line": 8,
-    "col": 32
   },
   {
     "type": "_brace_contents",

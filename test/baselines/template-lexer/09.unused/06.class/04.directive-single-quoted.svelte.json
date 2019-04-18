@@ -162,31 +162,13 @@
     "col": 21
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"active\"",
+    "text": "\"active\"",
     "offset": 63,
     "lineBreaks": 0,
     "line": 5,
     "col": 21
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "active",
-    "text": "active",
-    "offset": 64,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 22
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 70,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 28
   },
   {
     "type": "mustache_end",

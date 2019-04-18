@@ -288,31 +288,13 @@
     "col": 22
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"fadeOptions\"",
+    "text": "\"fadeOptions\"",
     "offset": 235,
     "lineBreaks": 0,
     "line": 9,
     "col": 22
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "fadeOptions",
-    "text": "fadeOptions",
-    "offset": 236,
-    "lineBreaks": 0,
-    "line": 9,
-    "col": 23
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 247,
-    "lineBreaks": 0,
-    "line": 9,
-    "col": 34
   },
   {
     "type": "mustache_end",

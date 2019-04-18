@@ -90,31 +90,13 @@
     "col": 7
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"value\"",
+    "text": "\"value\"",
     "offset": 51,
     "lineBreaks": 0,
     "line": 5,
     "col": 7
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "value",
-    "text": "value",
-    "offset": 52,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 8
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 57,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 13
   },
   {
     "type": "mustache_end",

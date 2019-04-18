@@ -234,31 +234,13 @@
     "col": 23
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"item\"",
+    "text": "\"item\"",
     "offset": 71,
     "lineBreaks": 0,
     "line": 5,
     "col": 23
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "item",
-    "text": "item",
-    "offset": 72,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 24
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 76,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 28
   },
   {
     "type": "mustache_end",

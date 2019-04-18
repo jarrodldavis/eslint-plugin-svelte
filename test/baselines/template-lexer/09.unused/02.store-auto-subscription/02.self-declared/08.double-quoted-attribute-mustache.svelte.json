@@ -135,31 +135,13 @@
     "col": 11
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"$count\"",
+    "text": "\"$count\"",
     "offset": 122,
     "lineBreaks": 0,
     "line": 8,
     "col": 11
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "$count",
-    "text": "$count",
-    "offset": 123,
-    "lineBreaks": 0,
-    "line": 8,
-    "col": 12
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 129,
-    "lineBreaks": 0,
-    "line": 8,
-    "col": 18
   },
   {
     "type": "mustache_end",

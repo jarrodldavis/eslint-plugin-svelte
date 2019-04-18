@@ -90,31 +90,13 @@
     "col": 7
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"$count\"",
+    "text": "\"$count\"",
     "offset": 118,
     "lineBreaks": 0,
     "line": 8,
     "col": 7
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "$count",
-    "text": "$count",
-    "offset": 119,
-    "lineBreaks": 0,
-    "line": 8,
-    "col": 8
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 125,
-    "lineBreaks": 0,
-    "line": 8,
-    "col": 14
   },
   {
     "type": "mustache_end",

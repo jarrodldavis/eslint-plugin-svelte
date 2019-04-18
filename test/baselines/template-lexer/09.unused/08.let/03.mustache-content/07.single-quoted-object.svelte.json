@@ -279,31 +279,13 @@
     "col": 35
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"index\"",
+    "text": "\"index\"",
     "offset": 83,
     "lineBreaks": 0,
     "line": 5,
     "col": 35
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "index",
-    "text": "index",
-    "offset": 84,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 36
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 89,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 41
   },
   {
     "type": "mustache_end",
@@ -351,31 +333,13 @@
     "col": 46
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"name\"",
+    "text": "\"name\"",
     "offset": 94,
     "lineBreaks": 0,
     "line": 5,
     "col": 46
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "name",
-    "text": "name",
-    "offset": 95,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 47
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 99,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 51
   },
   {
     "type": "mustache_end",

@@ -81,31 +81,13 @@
     "col": 8
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"A Blog Post\"",
+    "text": "\"A Blog Post\"",
     "offset": 116,
     "lineBreaks": 0,
     "line": 6,
     "col": 9
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "A Blog Post",
-    "text": "A Blog Post",
-    "offset": 117,
-    "lineBreaks": 0,
-    "line": 6,
-    "col": 10
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 128,
-    "lineBreaks": 0,
-    "line": 6,
-    "col": 21
   },
   {
     "type": "_right_bracket",

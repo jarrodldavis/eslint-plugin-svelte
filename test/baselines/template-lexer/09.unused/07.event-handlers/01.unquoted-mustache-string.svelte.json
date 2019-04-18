@@ -153,31 +153,13 @@
     "col": 16
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"handler\"",
+    "text": "\"handler\"",
     "offset": 87,
     "lineBreaks": 0,
     "line": 5,
     "col": 16
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "handler",
-    "text": "handler",
-    "offset": 88,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 17
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 95,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 24
   },
   {
     "type": "mustache_end",

@@ -243,31 +243,13 @@
     "col": 6
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"index\"",
+    "text": "\"index\"",
     "offset": 87,
     "lineBreaks": 0,
     "line": 8,
     "col": 6
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "index",
-    "text": "index",
-    "offset": 88,
-    "lineBreaks": 0,
-    "line": 8,
-    "col": 7
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 93,
-    "lineBreaks": 0,
-    "line": 8,
-    "col": 12
   },
   {
     "type": "mustache_end",
@@ -315,31 +297,13 @@
     "col": 17
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"name\"",
+    "text": "\"name\"",
     "offset": 98,
     "lineBreaks": 0,
     "line": 8,
     "col": 17
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "name",
-    "text": "name",
-    "offset": 99,
-    "lineBreaks": 0,
-    "line": 8,
-    "col": 18
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 103,
-    "lineBreaks": 0,
-    "line": 8,
-    "col": 22
   },
   {
     "type": "mustache_end",

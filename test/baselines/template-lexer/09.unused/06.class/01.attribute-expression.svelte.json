@@ -126,31 +126,13 @@
     "col": 13
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"active\"",
+    "text": "\"active\"",
     "offset": 59,
     "lineBreaks": 0,
     "line": 5,
     "col": 13
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "active",
-    "text": "active",
-    "offset": 60,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 14
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 66,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 20
   },
   {
     "type": "mustache_end",

@@ -126,31 +126,13 @@
     "col": 15
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"value\"",
+    "text": "\"value\"",
     "offset": 59,
     "lineBreaks": 0,
     "line": 5,
     "col": 15
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "value",
-    "text": "value",
-    "offset": 60,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 16
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 65,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 21
   },
   {
     "type": "mustache_end",

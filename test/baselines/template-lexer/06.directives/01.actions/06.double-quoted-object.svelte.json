@@ -171,31 +171,13 @@
     "col": 19
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"option\"",
+    "text": "\"option\"",
     "offset": 81,
     "lineBreaks": 0,
     "line": 5,
     "col": 20
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "option",
-    "text": "option",
-    "offset": 82,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 21
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 88,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 27
   },
   {
     "type": "_brace_contents",

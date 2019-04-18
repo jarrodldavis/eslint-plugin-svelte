@@ -162,31 +162,13 @@
     "col": 16
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"fadeOptions\"",
+    "text": "\"fadeOptions\"",
     "offset": 168,
     "lineBreaks": 0,
     "line": 7,
     "col": 16
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "fadeOptions",
-    "text": "fadeOptions",
-    "offset": 169,
-    "lineBreaks": 0,
-    "line": 7,
-    "col": 17
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 180,
-    "lineBreaks": 0,
-    "line": 7,
-    "col": 28
   },
   {
     "type": "mustache_end",

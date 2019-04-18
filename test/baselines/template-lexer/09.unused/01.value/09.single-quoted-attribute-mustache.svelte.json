@@ -135,31 +135,13 @@
     "col": 16
   },
   {
-    "type": "_left_double_quote",
-    "value": "\"",
-    "text": "\"",
+    "type": "_string",
+    "value": "\"value\"",
+    "text": "\"value\"",
     "offset": 60,
     "lineBreaks": 0,
     "line": 5,
     "col": 16
-  },
-  {
-    "type": "_double_string_contents",
-    "value": "value",
-    "text": "value",
-    "offset": 61,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 17
-  },
-  {
-    "type": "_right_double_quote",
-    "value": "\"",
-    "text": "\"",
-    "offset": 66,
-    "lineBreaks": 0,
-    "line": 5,
-    "col": 22
   },
   {
     "type": "mustache_end",
