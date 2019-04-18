@@ -1,30 +1,12 @@
 [
   {
-    "type": "_comment_start",
-    "value": "<!--",
-    "text": "<!--",
+    "type": "_comment",
+    "value": "<!-- eslint-disable one-var, camelcase -->",
+    "text": "<!-- eslint-disable one-var, camelcase -->",
     "offset": 0,
     "lineBreaks": 0,
     "line": 1,
     "col": 1
-  },
-  {
-    "type": "_comment_contents",
-    "value": " eslint-disable one-var, camelcase ",
-    "text": " eslint-disable one-var, camelcase ",
-    "offset": 4,
-    "lineBreaks": 0,
-    "line": 1,
-    "col": 5
-  },
-  {
-    "type": "_comment_end",
-    "value": "-->",
-    "text": "-->",
-    "offset": 39,
-    "lineBreaks": 0,
-    "line": 1,
-    "col": 40
   },
   {
     "type": "_body",
@@ -315,31 +297,13 @@
     "col": 33
   },
   {
-    "type": "_comment_start",
-    "value": "<!--",
-    "text": "<!--",
+    "type": "_comment",
+    "value": "<!-- eslint-enable camelcase -->",
+    "text": "<!-- eslint-enable camelcase -->",
     "offset": 156,
     "lineBreaks": 0,
     "line": 11,
     "col": 1
-  },
-  {
-    "type": "_comment_contents",
-    "value": " eslint-enable camelcase ",
-    "text": " eslint-enable camelcase ",
-    "offset": 160,
-    "lineBreaks": 0,
-    "line": 11,
-    "col": 5
-  },
-  {
-    "type": "_comment_end",
-    "value": "-->",
-    "text": "-->",
-    "offset": 185,
-    "lineBreaks": 0,
-    "line": 11,
-    "col": 30
   },
   {
     "type": "_body",

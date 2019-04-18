@@ -1,30 +1,12 @@
 [
   {
-    "type": "_comment_start",
-    "value": "<!--",
-    "text": "<!--",
+    "type": "_comment",
+    "value": "<!-- eslint-disable no-console -->",
+    "text": "<!-- eslint-disable no-console -->",
     "offset": 0,
     "lineBreaks": 0,
     "line": 1,
     "col": 1
-  },
-  {
-    "type": "_comment_contents",
-    "value": " eslint-disable no-console ",
-    "text": " eslint-disable no-console ",
-    "offset": 4,
-    "lineBreaks": 0,
-    "line": 1,
-    "col": 5
-  },
-  {
-    "type": "_comment_end",
-    "value": "-->",
-    "text": "-->",
-    "offset": 31,
-    "lineBreaks": 0,
-    "line": 1,
-    "col": 32
   },
   {
     "type": "_body",

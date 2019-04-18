@@ -162,31 +162,13 @@
     "col": 19
   },
   {
-    "type": "_comment_start",
-    "value": "<!--",
-    "text": "<!--",
+    "type": "_comment",
+    "value": "<!-- eslint-disable-next-line camelcase -->",
+    "text": "<!-- eslint-disable-next-line camelcase -->",
     "offset": 80,
     "lineBreaks": 0,
     "line": 9,
     "col": 1
-  },
-  {
-    "type": "_comment_contents",
-    "value": " eslint-disable-next-line camelcase ",
-    "text": " eslint-disable-next-line camelcase ",
-    "offset": 84,
-    "lineBreaks": 0,
-    "line": 9,
-    "col": 5
-  },
-  {
-    "type": "_comment_end",
-    "value": "-->",
-    "text": "-->",
-    "offset": 120,
-    "lineBreaks": 0,
-    "line": 9,
-    "col": 41
   },
   {
     "type": "_body",

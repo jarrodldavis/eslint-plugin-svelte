@@ -1,30 +1,12 @@
 [
   {
-    "type": "_comment_start",
-    "value": "<!--",
-    "text": "<!--",
+    "type": "_comment",
+    "value": "<!-- eslint-disable no-console, @jarrodldavis/svelte/no-labels -->",
+    "text": "<!-- eslint-disable no-console, @jarrodldavis/svelte/no-labels -->",
     "offset": 0,
     "lineBreaks": 0,
     "line": 1,
     "col": 1
-  },
-  {
-    "type": "_comment_contents",
-    "value": " eslint-disable no-console, @jarrodldavis/svelte/no-labels ",
-    "text": " eslint-disable no-console, @jarrodldavis/svelte/no-labels ",
-    "offset": 4,
-    "lineBreaks": 0,
-    "line": 1,
-    "col": 5
-  },
-  {
-    "type": "_comment_end",
-    "value": "-->",
-    "text": "-->",
-    "offset": 63,
-    "lineBreaks": 0,
-    "line": 1,
-    "col": 64
   },
   {
     "type": "_body",

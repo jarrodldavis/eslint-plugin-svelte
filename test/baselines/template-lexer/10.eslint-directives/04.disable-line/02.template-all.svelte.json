@@ -405,31 +405,13 @@
     "col": 27
   },
   {
-    "type": "_comment_start",
-    "value": "<!--",
-    "text": "<!--",
+    "type": "_comment",
+    "value": "<!-- eslint-disable-line -->",
+    "text": "<!-- eslint-disable-line -->",
     "offset": 140,
     "lineBreaks": 0,
     "line": 10,
     "col": 28
-  },
-  {
-    "type": "_comment_contents",
-    "value": " eslint-disable-line ",
-    "text": " eslint-disable-line ",
-    "offset": 144,
-    "lineBreaks": 0,
-    "line": 10,
-    "col": 32
-  },
-  {
-    "type": "_comment_end",
-    "value": "-->",
-    "text": "-->",
-    "offset": 165,
-    "lineBreaks": 0,
-    "line": 10,
-    "col": 53
   },
   {
     "type": "_body",
