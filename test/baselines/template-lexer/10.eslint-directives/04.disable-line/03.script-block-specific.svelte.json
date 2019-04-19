@@ -1,29 +1,11 @@
 [
   {
-    "type": "_script_start_tag",
-    "value": "<script>",
-    "text": "<script>",
+    "type": "_script_block",
+    "value": "<script>\n  const first = 2;\n\n  const posts = []; // eslint-disable-line one-var\n</script>",
+    "text": "<script>\n  const first = 2;\n\n  const posts = []; // eslint-disable-line one-var\n</script>",
     "offset": 0,
-    "lineBreaks": 0,
-    "line": 1,
-    "col": 1
-  },
-  {
-    "type": "_script_body",
-    "value": "\n  const first = 2;\n\n  const posts = []; // eslint-disable-line one-var\n",
-    "text": "\n  const first = 2;\n\n  const posts = []; // eslint-disable-line one-var\n",
-    "offset": 8,
     "lineBreaks": 4,
     "line": 1,
-    "col": 9
-  },
-  {
-    "type": "_end_script_tag",
-    "value": "</script>",
-    "text": "</script>",
-    "offset": 80,
-    "lineBreaks": 0,
-    "line": 5,
     "col": 1
   },
   {

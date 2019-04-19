@@ -1,29 +1,11 @@
 [
   {
-    "type": "_script_start_tag",
-    "value": "<script>",
-    "text": "<script>",
+    "type": "_script_block",
+    "value": "<script>\n  export let value = \"some value\";\n</script>",
+    "text": "<script>\n  export let value = \"some value\";\n</script>",
     "offset": 0,
-    "lineBreaks": 0,
-    "line": 1,
-    "col": 1
-  },
-  {
-    "type": "_script_body",
-    "value": "\n  export let value = \"some value\";\n",
-    "text": "\n  export let value = \"some value\";\n",
-    "offset": 8,
     "lineBreaks": 2,
     "line": 1,
-    "col": 9
-  },
-  {
-    "type": "_end_script_tag",
-    "value": "</script>",
-    "text": "</script>",
-    "offset": 44,
-    "lineBreaks": 0,
-    "line": 3,
     "col": 1
   },
   {

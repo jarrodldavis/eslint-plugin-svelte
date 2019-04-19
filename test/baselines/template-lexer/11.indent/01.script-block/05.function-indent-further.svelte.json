@@ -1,29 +1,11 @@
 [
   {
-    "type": "_script_start_tag",
-    "value": "<script>",
-    "text": "<script>",
+    "type": "_script_block",
+    "value": "<script>\n  /* eslint-disable func-style */\n\n  function handler (event) {\n\n      event.target.remove();\n\n  }\n</script>",
+    "text": "<script>\n  /* eslint-disable func-style */\n\n  function handler (event) {\n\n      event.target.remove();\n\n  }\n</script>",
     "offset": 0,
-    "lineBreaks": 0,
-    "line": 1,
-    "col": 1
-  },
-  {
-    "type": "_script_body",
-    "value": "\n  /* eslint-disable func-style */\n\n  function handler (event) {\n\n      event.target.remove();\n\n  }\n",
-    "text": "\n  /* eslint-disable func-style */\n\n  function handler (event) {\n\n      event.target.remove();\n\n  }\n",
-    "offset": 8,
     "lineBreaks": 8,
     "line": 1,
-    "col": 9
-  },
-  {
-    "type": "_end_script_tag",
-    "value": "</script>",
-    "text": "</script>",
-    "offset": 108,
-    "lineBreaks": 0,
-    "line": 9,
     "col": 1
   },
   {
