@@ -1,5 +1,5 @@
 {
   "all": true,
   "include": ["index.js", "individual-warnings.js", "lib/**/*.js"],
-  "reporter": ["text"]
+  "reporter": ["text", "html"]
 }
