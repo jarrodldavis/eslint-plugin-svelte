@@ -6,5 +6,5 @@
 </script>
 
 {#each posts as {id}, index}
-  <p>{title}</p>
+  <p>{id}</p>
 {/each}
