@@ -12,6 +12,7 @@ const {
   load_baselines,
   NAME,
   IS_DIRECTORY,
+  TEMPLATE_PATH,
   TEMPLATE_CONTENTS,
   BASELINE_PATH,
   BASELINE_CONTENTS
@@ -25,7 +26,8 @@ const BASELINE_ROOT = path.join(__dirname, "../", "baselines/");
 class BaselineSuite {
   constructor(name, get_result) {
     this.name = name;
-    this.get_result = entry => JSON.parse(JSON.stringify(get_result(entry)));
+    this.get_result = (...args) =>
+      JSON.parse(JSON.stringify(get_result(...args)));
     this.directory = path.join(BASELINE_ROOT, name, "/");
     this.to_add = [];
     this.to_update = [];
@@ -79,7 +81,10 @@ class BaselineSuite {
     expect(entry, "to have a template");
     this.to_delete.pop();
 
-    const result = this.get_result(entry[TEMPLATE_CONTENTS]);
+    const result = this.get_result(
+      entry[TEMPLATE_CONTENTS],
+      entry[TEMPLATE_PATH]
+    );
 
     this.to_add.push({ path: baseline_path, contents: result });
     expect(entry, "to have a baseline");
