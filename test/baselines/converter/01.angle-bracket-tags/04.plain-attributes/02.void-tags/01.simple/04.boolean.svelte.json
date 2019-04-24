@@ -1,0 +1,149 @@
+{
+  "start": 0,
+  "end": 18,
+  "type": "Program",
+  "sourceType": "module",
+  "body": [
+    {
+      "start": 0,
+      "end": 18,
+      "type": "Element",
+      "name": "input",
+      "attributes": [
+        {
+          "start": 7,
+          "end": 15,
+          "type": "Attribute",
+          "name": "disabled",
+          "value": true,
+          "range": [
+            7,
+            15
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 7
+            },
+            "end": {
+              "line": 1,
+              "column": 15
+            }
+          }
+        }
+      ],
+      "children": [],
+      "range": [
+        0,
+        18
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 18
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "Punctuator",
+      "start": 0,
+      "end": 1,
+      "value": "<",
+      "range": [
+        0,
+        1
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "String",
+      "start": 1,
+      "end": 6,
+      "value": "input",
+      "range": [
+        1,
+        6
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 1
+        },
+        "end": {
+          "line": 1,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": "String",
+      "start": 7,
+      "end": 15,
+      "value": "disabled",
+      "range": [
+        7,
+        15
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 7
+        },
+        "end": {
+          "line": 1,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": "Punctuator",
+      "start": 16,
+      "end": 18,
+      "value": "/>",
+      "range": [
+        16,
+        18
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 16
+        },
+        "end": {
+          "line": 1,
+          "column": 18
+        }
+      }
+    }
+  ],
+  "comments": [],
+  "range": [
+    0,
+    18
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 1,
+      "column": 18
+    }
+  }
+}
