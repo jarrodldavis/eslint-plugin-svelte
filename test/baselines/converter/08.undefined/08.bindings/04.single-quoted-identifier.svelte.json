@@ -1,0 +1,16 @@
+{
+  "name": "ValidationError",
+  "code": "binding-undeclared",
+  "start": {
+    "line": 1,
+    "column": 20,
+    "character": 20
+  },
+  "end": {
+    "line": 1,
+    "column": 25,
+    "character": 25
+  },
+  "pos": 20,
+  "frame": "1: <input bind:value='{value}' />\n                       ^\n2: "
+}
